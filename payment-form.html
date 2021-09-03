@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+
+    <form action="">
+        <h2>Contact Information</h2>
+        <input id="mr" name="title" type="radio" value="mr" checked>Mr.</input>
+        <br>
+        <input id="ms" name="title" type="radio" value="ms">Ms.</input>
+        <br>
+        <input id="mrs" name="title" type="radio" value="mrs">Mrs.</input>
+        <br>
+        <input id="mx" name="title" type="radio" value="mx">Mx.</input>
+        <br><br>
+        <label for="name">
+            Name:*
+            <input id="name" name="name-input" type='text' placeholder='Name'>
+        </label>
+        <br><br>
+        <label for="">
+            Email:*
+            <input id="email" name="email-input" type='email' placeholder='Email'>
+        </label>
+        <br>
+
+        <h2>Payment Information</h2>
+        <label>
+            Card Type:
+            <select name="card-category" id="card">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="card-number">
+            Card Number:*
+            <input id="card-number" name="number-input" type="tel" placeholder="xxxx xxxx xxxx xxxx">
+        </label>
+        <br><br>
+        <label for="exp-date">
+            Expiration Date (MM/YY):*
+            <input id="exp-date" name="exp-date-input" type="text" placeholder="mm/yy">
+        </label>
+        <br><br>
+        <input id="submit" name="submit-button" type="submit" value="Submit Payment">
+    </form>
+
+</body>
+</html>

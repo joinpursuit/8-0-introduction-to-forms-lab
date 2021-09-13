@@ -9,38 +9,59 @@
     <h2>Contact Information</h2>
     <form>
       <label>
-        <input id="Mr." name="visibility" type="radio" />
+        <input id="Mr." name="visibility" type="radio" checked />
         Mr.
       </label>
       <br />
       <label>
-        <input id="Mr." name="visibility" type="radio" />
+        <input id="Ms." name="visibility" type="radio" />
         Ms.
       </label>
       <br />
       <label>
-        <input id="Mr." name="visibility" type="radio" />
+        <input id="Mrs." name="visibility" type="radio" />
         Mrs.
       </label>
       <br />
-
       <label>
-        <input id="Mr." name="visibility" type="radio" />
+        <input id="Mx." name="visibility" type="radio" />
         Mx.
       </label>
       <br />
-      <p>
-        <label for="post-name">
-          Name:*
-          <input id="post-name" name="name" type="text" required />
-        </label>
-      </p>
-      <p>
-        <label for="post-email">
-          Email:*
-          <input id="post-email" name="email" type="email" required />
-        </label>
-      </p>
+      <br />
+      <label for="post-name">
+        Name:*
+        <input
+          id="post-name"
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+        />
+      </label>
+      <br />
+      <br />
+      <label for="post-email">
+        Email:*
+        <input
+          id="post-email"
+          name="email"
+          type="email"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <h2>Payment Information</h2>
+      <label>
+        Card Type:
+        <select id="id-category" name="category">
+          <option value="Visa">Visa</option>
+          <option value="Mastercard">Mastercard</option>
+          <option value="American Express">American Express</option>
+          <option value="Discover">Discover</option>
+        </select>
+      </label>
+      <label
     </form>
   </body>
 </html>

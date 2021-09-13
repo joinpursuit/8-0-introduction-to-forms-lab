@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bryant & Triane Project</title>
+    </head>
+    <body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+    <h2>Contact Information</h2>
+    <form>
+        <label>
+            <input id="public" name="visibility" type="radio" value="public" checked 
+        /> Mr.
+        <br>
+            
+            <input id="public"
+            name="visibility" type="radio"
+            value="public"
+        /> Ms.
+        <br>
+        
+        <input id="public"
+        name="visibility" type="radio"
+        value="public"
+        /> Mrs.
+        <br>
+        
+        <input id="public"
+        name="visibility" type="radio"
+        value="public"
+        />  Mx.
+        </label>
+        <br>
+       <label>
+           Name:* 
+            <input 
+            id="Name"
+            placeholder="Name" 
+            type="text" 
+            name="Name"
+            required
+        />
+        
+        <br> <br>
+    
+            Email:*
+            <input 
+            id="email" 
+            placeholder="Email"
+            name="emial" 
+            type="email"
+            required/>
+       </label>
+        <h2>Payment Information</h2>
+        <label>
+            Card type:
+            <select name="Payment-method" id="Payment-method">
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="american-express">American Express</option>
+              <option value="discover">Discover</option>
+            </select>
+        </label><br> <br>
+        <label>
+            Card number:*
+            <input type="text" id="card-number" name="card-number" placeholder="xxxx xxxx xxxx xxxx"
+            required>
+            </label>
+        </label> <br> <br>
+        <label>
+            Expiration Date (MM/DD):* 
+            <input type="text" id="expiration-text" name="expiration-text" placeholder="mm/yy" required> <br> <br>
+            <input type="submit" value="Submit Payment" />
+        </label>
+    </form>
+</html>

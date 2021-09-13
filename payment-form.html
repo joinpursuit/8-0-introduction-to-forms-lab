@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <form>
+        <p>Required fields are marked by *</p>
+        <h2>Contact Information</h2>
+        <input id="select-prefix" name="prefix" type="radio" value="Mx." checked/>
+        <label for="select-prefix">Mx.</label>
+        <br>
+
+        <input id="select-prefix" name="prefix" type="radio" value="Mr."/>
+        <label for="select-prefix">Mr.</label>
+        <br>
+
+        <input id="select-prefix" name="prefix" type="radio" value="Ms."/>
+        <label for="select-prefix">Ms.</label>
+        <br>
+
+        <input id="select-prefix" name="prefix" type="radio" value="Mrs."/>
+        <label for="select-prefix">Mrs.</label>
+        <br/>
+        <br>
+        <label for="full-name">Name*</label>
+        <input type="text" name="full-name" id="full-name" placeholder="Name" required/>
+        <br>
+        <br>
+
+        <label for="email">Email*</label>
+        <input id="email" name="email" type="email" placeholder="Email"required/>
+
+
+        <h2>Payment Information</h2>
+
+        <label for="card-type">Card Type:</label>
+        <select id="card-type" name="credit-card">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american-express">American Express</option>
+            <option value="discover">Discover</option>
+        </select>
+        <br/>
+        <br>
+        <label for="card-number">Card Number*</label>
+        <input type="number" name="card-number" id="card-number" placeholder="xxxx xxxx xxxx xxxx" required/>
+        <br>
+        <br>
+        <label for="expiration-date">Expiration Date (MM/YY)*</label>
+        <input type="text" name="expiration-date" id="expiration-date" placeholder="mm/yy" required/>
+        <br>
+        <br>
+        <input type="submit" value="Submit Payment"/>
+    </form>
+</body>
+</html>

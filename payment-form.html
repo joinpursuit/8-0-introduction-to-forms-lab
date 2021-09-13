@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM LAB</title>
+    </head>
+    <body>
+        <form>
+            <h1>Payment Form</h1>
+            <p>Required fields are marked by <u>*</u></p>
+            <h2>Contact Information</h2>
+            
+            <input type="radio" id="Mr" value="Mr" name="prefix" checked />
+            <label for="Mr">Mr.
+            </label><br>
+            <input type="radio" id="Ms" value="Ms" name="prefix" />
+            <label for="Ms">Ms.
+                <br>
+                
+                <input type="radio" id="Mrs." value="Mrs" name="prefix" />
+                <label for="Mrs">Mrs.
+                <br>
+                </label>
+                <input type="radio" id="Mx." value="Mx" name="prefix" />
+                <label for="Mx">Mx.
+                </label>
+                <br>
+            </label><br>
+            <label for="Name">Name:*
+                <input
+                type="text"
+                name="Name"
+                id="Name"
+                placeholder="Name" required />
+            </label><br>
+            <br>
+            <label for="Email">Email:*
+                <input
+                type="email"
+                name="Email"
+                id="Email"
+                placeholder="Email" required /><br>
+                <h2>Payment Information</h2>
+                <label>
+                    Card Type:
+                    <select id="card-type" name="card-type">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="american-express">American Express</option>
+                        <option value="discover">Discover</option>
+                    </select>
+                </label><br><br>
+                <label for="card-number">Card Number:*
+                    <input
+                    type="tel"
+                    name="card-number"
+                    id="card-number"
+                    placeholder="xxxx xxxx xxxx xxxx"
+                    required /><br><br>
+                    <label for="Exdate">Expiration date (MM/YY):*
+                        <input
+                        type="text"
+                        name="Exdate"
+                        id="Exdate"
+                        placeholder="mm/yy"
+                        required /><br><br>
+                        <input
+                type="submit"
+                value="Submit Payment"
+                name="submit-button"
+                id="submit-button" />
+                    </form>
+                </body>
+                </html>
+                        
+
+
+                

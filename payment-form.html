@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form>
+        <h1>Payment Form</h1>
+
+        <p>Required fields are marked by <u>*</u></p>
+
+        <h2>Contact Information</h2>
+
+        
+        <ul style="list-style: none;">
+           
+                <li>
+                <input id="mr." name="surname" type="radio" value="mr." checked />
+                <label for="mr.">Mr.</label>
+                </li> 
+           
+                <li>
+                <input id="ms." name="surname" type="radio" value="ms." />
+                <label for="ms.">Ms.</label>
+                </li>
+                
+                <li>
+                <input id="mrs." name="surname" type="radio" value="mrs." />
+                <label for="mrs.">Mrs.</label>
+                </li>
+    
+                <li>
+                <input id="mx." name="surname" type="radio" value="mx." />
+                <label for="mx.">Mx.</label>
+                </li>
+    
+        </ul>
+    
+       
+        <ul style="list-style: none;">
+           <li>
+            <label for="name">Name:*</label> 
+            <input type="text" name="name" id="name" placeholder="Name" required/>
+           </li>
+
+        </ul>
+       
+        <ul style="list-style: none;">
+            <li>
+            <label for="email">Email:*</label>
+            <input id="email" name="email" type="email" placeholder="Email" required/>
+            </li>
+        </ul>
+
+
+        <h2>Payment Information</h2>
+
+
+        <ul style="list-style: none;">
+           <li>
+            <label for="card-type">Card Type: </label>
+            <select id="card-type" name="card_type">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            </li>
+
+        </ul>
+
+        <ul style="list-style: none;">
+            <li>
+            <label for="card-number">Card Number:*</label>
+            <input type="tel" id="card-number" name="card-number" placeholder="xxxx xxxx xxxx xxxx" required/>
+            </li>
+        </ul>
+
+        <ul style="list-style: none;">
+            <li>
+            <label for="expiration-date">Expiration Date (MM/YY):*</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="mm/yy" required/>
+            </li>
+        </ul>
+
+
+        <input type="submit" value="Submit Payment" />
+    </form>
+</body>
+</html>

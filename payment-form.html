@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+<h2><strong>Contact Information</strong></h2>
+
+<input id="Mr." name="" type="radio" value="Mr."checked />
+<label for="Mr.">Mr.</label><br>
+
+<input id="Ms." name="" type="radio" value="Ms." />
+<label for="Ms.">Ms.</label><br>
+
+<input id="Mrs." name="" type="radio" value="Mrs." />
+<label for="Mrs.">Mrs.</label><br>
+
+<input id="Mx." name="" type="radio" value="Mx." />
+<label for="Mx.">Mx.</label>
+
+<br>
+
+<label for="name">Name:*</label>
+<input type="text" name="text" id="full-name" placeholder="Name" required/>
+<br>
+<br>
+<label for="email">Email:*</label>
+<input id="email" name="email" type="email" placeholder="Email" required/>
+
+<h2><strong>Payment Information</strong></h2>
+
+<label for="card-type">Card Type:</label>
+<select id="card-type" name="card-type">
+    <option value="visa">Visa</option>
+    <option value="mastercard">Mastercard</option>
+    <option value="american-express">American Express</option>
+    <option value="discover">Discover</option>
+</select>
+<br>
+<br>
+</label>
+<label for="card-number">Card Number:*</label>
+<input id="card-number" name="card-number" type="tel" placeholder="xxxx xxxx xxxx xxxx" required /> 
+<br>
+<br>
+<label for="expiration-date">Expiration Date(MM/YY):*</label>
+<input id="expiration-date" name="expiration-date" type="text" placeholder="mm/yy" required/>
+<br>
+        <input type="submit" value="Submit Payment">
+</form>
+</body>
+</html>

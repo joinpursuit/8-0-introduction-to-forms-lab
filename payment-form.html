@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+    <h2>Contact Information</h2>
+
+    <input type="radio" id="Mr." name="Name" value="Mr." checked />
+    <label for="huey">Mr.</label>
+    <br />
+    <input type="radio" id="Ms." name="Name" value="Ms." />
+    <label for="Ms.">Ms.</label><br />
+    <input type="radio" id="Mrs." name="Name" value="Mrs." />
+    <label for="Mrs.">Mrs.</label><br />
+    <input type="radio" id="Mx." name="Name" value="Mx." />
+    <label for="Mx.">Mx.</label>
+    <br /><br />
+    <form>
+      Name:* <input type="text" id="fname" name="fname" placeholder="Name" required/><br /><br />
+      Email:* <input type="email" id="fname" name="fname" placeholder='Email' required/>
+
+    <h2>Payment Information</h2>
+    <label>
+      Card Type
+      <select id="post-category" name="category">
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+    </select
+      ><br /><br />
+      
+        Card Number:* <input type="text" id="fname" name="fname" placeholder='xxxx xxxx xxxx xxxx' required/><br /><br />
+        Expiration Date (MM/YY):*
+        <input type="text" id="fname" name="fname" placeholder='mm/yy' required/><br /><br />
+        <input type="submit" value="Submit Payment" />
+      </form>
+    </label>
+  </body>
+</html>

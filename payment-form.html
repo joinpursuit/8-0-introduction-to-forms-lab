@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Intro to Forms Lab</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>Payment Plan</h1>
+        <p>Required fields are maked by *</p>
+        <input id="Mr" name="option" type="radio" value="8.2" />
+        <label for="Mr.">Mr.</label>
+        <br>
+
+        <input id="Ms." name="option" type="radio" value="8.2" />
+        <label for="Ms.">Ms.</label>
+        <br>
+
+        <input id="Mrs" name="option" type="radio" value="8.2" />
+        <label for="Mrs.">Mrs.</label>
+        <br>
+
+        <input id="Gender-neutral" name="option" type="radio" value="8.2" />
+        <label for="Mrx.">Mrx.</label>
+        <br><br>
+
+        <label for="">Name:*</label>
+        <input id="user-name" type="text" placeholder="Name" required />
+        <br><br>
+
+        <label for="">Email:*</label>
+        <input id="user-email" type="email" placeholder="Email" required />
+        <br><br>
+
+        <h2>Payment Information</h2>
+        Card Type: <select name = "" id = " payment-method" name = "Payment Method">
+        <option value = "visa">Visa</option>
+        <option value = "mastercard">Mastercard</option>
+        <option value = "american-express">American Express</option>
+        <option value = "discover">Discover</option>
+</select>
+<br><br>
+
+<label for = "">Card Number</label>
+<input id = "card-number" placeholder = "xxxx xxxx xxxx xxxx" required/>
+<br><br>
+
+<label for="">Experation Date (MM/YY):*</label>
+<input id = "expiry-date" type = "text" placeholder = "mm/yy" required />
+<br><br>
+
+<input type = "submit" value = "Submit Payment">
+    </form>
+</body>
+
+</html>

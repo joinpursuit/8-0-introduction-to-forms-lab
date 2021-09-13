@@ -6,7 +6,7 @@
   <body>
     <h1>Payment Form</h1>
     <p>Required fields are marked by <u>*</u></p>
-    <h2>Contact Information</h2>
+    <h3>Contact Information</h3>
     <form>
       <label>
         <input id="Mr." name="visibility" type="radio" checked />
@@ -27,8 +27,7 @@
         <input id="Mx." name="visibility" type="radio" />
         Mx.
       </label>
-      <br />
-      <br />
+      <pre></pre>
       <label for="post-name">
         Name:*
         <input
@@ -39,8 +38,7 @@
           required
         />
       </label>
-      <br />
-      <br />
+      <pre></pre>
       <label for="post-email">
         Email:*
         <input
@@ -51,7 +49,7 @@
           required
         />
       </label>
-      <h2>Payment Information</h2>
+      <h3>Payment Information</h3>
       <label>
         Card Type:
         <select id="id-category" name="category">
@@ -61,7 +59,30 @@
           <option value="Discover">Discover</option>
         </select>
       </label>
-      <label
+      <pre></pre>
+      <label>
+        Card Number:*
+        <input
+          id="post-card-number"
+          name="card-number"
+          type="tel"
+          placeholder="xxxx xxxx xxxx xxxx"
+          required
+        />
+      </label>
+      <pre></pre>
+      <label>
+        Expiration Date (MM/YY):*
+        <input
+          id="post-expiration-date"
+          name="expiration-date"
+          type="text"
+          placeholder="mm/yy"
+          required
+        />
+      </label>
+      <pre></pre>
+      <input type="submit" value="Submit Payment" />
     </form>
   </body>
 </html>

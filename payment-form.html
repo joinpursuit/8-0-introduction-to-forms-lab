@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Payment Form</h1>
+        
+        <p>Required fields are marked by *</p>
+        
+        <h2>Contact Information</h2>
+
+        <input id="Mr." name="Mr." type="radio" value="Mr." checked/>
+        <label for="Mr.">Mr.</label>
+        <br>
+        <input id="Ms." name="Ms." type="radio" value="Ms." />
+        <label for="Ms.">Ms.</label>
+        <br>
+        <input id="Mrs." name="Mrs." type="radio" value="Mrs." />
+        <label for="Mrs.">Mrs.</label>
+        <br>
+        <input id="Mx." name="Mx." type="radio" value="Mx." />
+        <label for="Mx.">Mx.</label>
+        <br>
+        <br>
+        <label for="full-name">Name:*</label>
+        <input type="text" name="full-name" id="full-name" placeholder="Name" required/>
+        <br>
+        <br>
+        <label for="email">Email:*</label>
+        <input type="email" name="email" id="email" placeholder="Email" required/>
+
+        <h2>Payment Information</h2>
+        
+        <label for="card-type">Email:*</label>
+        <select id="borough" name="borough">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american-express">American Express</option>
+            <option value="discover">Discover</option>
+        </select>
+        <br>
+        <br>
+        <label for="card-number">Card Number:*</label>
+        <input type="number" name="card-number" id="card-number" placeholder="xxxx xxxx xxxx xxxx" required/>
+        <br>
+        <br>
+        <label for="expiration-date">Expiration Date (MM/YY):*</label>
+        <input type="text" name="expiration-date" id="expiration-date" placeholder="mm/yy" required/>
+        <br>
+        <br>
+        <input type="submit" name="submit" id="submit" value="Submit Payment"/>
+    </form>
+</body>
+</html>

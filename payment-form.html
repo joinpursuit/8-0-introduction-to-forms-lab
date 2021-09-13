@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+    <h2>Contact Information</h2>
+
+    <input id="address-mr." name="address-name" type="radio" value="mr." checked/>
+    <label for="address-mr.">Mr.</label>
+    <br />
+    <input id="address-ms." name="address-name" type="radio" value="ms." />
+    <label for="address-ms.">Ms.</label>
+    <br />
+    <input id="address-mrs." name="address-name" type="radio" value="mrs." />
+    <label for="address-mrs.">Mrs.</label>
+    <br />
+    <input id="address-mx." name="address-name" type="radio" value="mx." />
+    <label for="address-mx.">Mx.</label>
+    <br />
+    <br />
+    <label for="full-name">Name:* </label>
+    <input id="full-name" name="full-name" type="text" placeholder="Name" required/>
+    <br />
+    <br />
+    <label for="email-address">Email:* </label>
+    <input id="email-address" name="email-address" type="email" placeholder="Email" required/>
+    <br />
+   
+    <h2>Payment Information</h2>
+    <label for="card-type">Card Type: </label>
+    <select id="card-type" name="card-type">
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+    </select>
+    <br />
+    <br />
+    <label for="card-num">Card Number:* </label>
+    <input id="card-num" name="card-num" type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
+    <br />
+    <br />
+    <label for="expired-date">Expiration Date (MM/YY):* </label>
+    <input id="expired-date" name="expired-date" type="text" placeholder="mm/yy" required/>
+    <br />
+    <br />
+    <input type="submit" value="Submit Payment" />
+</form>
+</body>
+</html>

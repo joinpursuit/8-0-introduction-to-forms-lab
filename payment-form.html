@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Payment Form</h1>
+      <p>Required fields are marked by *</p>
+      <h2>Contact Information</h2>
+      <input name="prefix" id="mr" type="radio" checked />
+      <label for="mr"> Mr. </label>
+      <br />
+      <input name="prefix" id="ms" type="radio" />
+      <label for="ms"> Ms. </label>
+      <br />
+      <input name="prefix" id="mrs" type="radio" />
+      <label for="mrs"> Mrs. </label><br />
+      <input name="prefix" id="mx" type="radio" />
+      <label for="mx"> Mx. </label>
+      <br /><br />
+      <label>
+        Name:*
+        <input
+          type="text"
+          name="name-box"
+          id="name-box"
+          placeholder="Name"
+          required
+        />
+      </label>
+      <br /><br />
+      <label>
+        Email:*
+        <input
+          type="email"
+          name="email-box"
+          id="email-box"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <h2>Payment Information</h2>
+      <label>
+        Card Type:
+        <select id="card-type" name="card">
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="american-express">American Express</option>
+          <option value="discover">Discover</option>
+        </select>
+      </label>
+      <br />
+      <br />
+      <label>
+        Card Type:*
+        <input
+          type="text"
+          name="card-type-box"
+          id="card-type-box"
+          placeholder="xxxx xxxx xxxx xxxx"
+          required
+        />
+      </label>
+      <br />
+      <br />
+      <label>
+        Expiration Date(MM/YY):*
+        <input
+          type="text"
+          name="exp.date-box"
+          id="exp.date-box"
+          placeholder="mm/yy"
+          required
+        />
+      </label>
+      <br />
+      <br />
+      <input type="submit" value="Submit Payment" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Payment Form</title>
+</head>
+        <body>
+<h1>Payment Form</h1>
+<p>Required fields are marked by <strong><u>*</u></strong></p>
+<h2>Contact Information:</h2>
+        <label>
+        <input id="mister" name="visibility" type="radio" value="public" checked/>
+        Mr.
+        </label>
+        <br>
+        <label>
+            <input id="miss" name="visibility" type="radio" value="public"/>
+            Ms.
+        </label>
+        <br>
+        <label>
+            <input id="misses" name="visibility" type="radio" value="public"/>
+            Mrs.
+        </label>
+        <br>
+        <label>
+            <input id="neutral" name="visibility" type="radio" value="public"/>
+            Mx.
+        </label>
+        <br>
+        <br>
+                    <form>
+                    <label>Name:*
+                    <input type="text" name="name" id="name-text" placeholder="Name" required/>
+                    </label>
+                    <br>
+                    <label>Email:*
+                        <input type="email" name="email" id="email-text" placeholder="Email" required/>
+                        </label>
+                    </form>
+
+        <h2> Payment Information</h2> 
+        <label>
+            Card Type:
+            <select id="card type" name="category">
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="american-express">American Express</option>
+              <option value="discover">Discover</option>
+            </select>
+          </label>  
+          <br>
+          <label>Card Number:*
+            <input type="tel" inputmode="numeric" name="card num" id="CCN" pattern="[0-9\s]{13-19}" placeholder="xxxx xxxx xxxx xxxx" required/>
+            </label>
+            <br>
+          <label>Expiration Date:*
+            <input type="text" name="exp date" id="name-text" placeholder="mm/yy" required/>
+            </label>
+            <br>
+            <label>CVV:*
+                <input type="text" name="cvv" id="name-text" placeholder="xxx" required/>
+                </label>
+                <br>
+            <input type="submit" value="Submit Payment"/>
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>

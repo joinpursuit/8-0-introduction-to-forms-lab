@@ -7,27 +7,40 @@
     <h1>Payment Form</h1>
     <p>Required fields are marked by <u>*</u></p>
     <h2>Contact Information</h2>
-    <label>
-      <input id="Mr." name="visibility" type="radio" />
-      Mr.
-    </label>
-    <br />
-    <label>
-      <input id="Mr." name="visibility" type="radio" />
-      Ms.
-    </label>
-    <br />
+    <form>
+      <label>
+        <input id="Mr." name="visibility" type="radio" />
+        Mr.
+      </label>
+      <br />
+      <label>
+        <input id="Mr." name="visibility" type="radio" />
+        Ms.
+      </label>
+      <br />
+      <label>
+        <input id="Mr." name="visibility" type="radio" />
+        Mrs.
+      </label>
+      <br />
 
-    <label>
-      <input id="Mr." name="visibility" type="radio" />
-      Mrs.
-    </label>
-    <br />
-
-    <label>
-      <input id="Mr." name="visibility" type="radio" />
-      Mx.
-    </label>
-    <br />
+      <label>
+        <input id="Mr." name="visibility" type="radio" />
+        Mx.
+      </label>
+      <br />
+      <p>
+        <label for="post-name">
+          Name:*
+          <input id="post-name" name="name" type="text" required />
+        </label>
+      </p>
+      <p>
+        <label for="post-email">
+          Email:*
+          <input id="post-email" name="email" type="email" required />
+        </label>
+      </p>
+    </form>
   </body>
 </html>

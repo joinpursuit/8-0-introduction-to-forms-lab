@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        Intro to Forms Lab
+    </head>
+    <!-- By: Charlie Moran and Ronnie Garcia-->
+    <body>
+        <h1> Payment Form </h1>
+        <p>Required fields are marked by *</p>
+        <form>
+            <h2>Contact Information</h2>
+
+            <input id="prefix" name="contact-info" type = "radio" value = "Mr." checked >
+            <label for="prefix">Mr.</label>
+            <br>
+
+            <input id="prefix" name="contact-info" type = "radio" value = "Ms." >
+            <label for="prefix">Ms.</label>
+            <br>
+
+            <input id="prefix" name="contact-info" type = "radio" value = "Mrs." >
+            <label for="prefix">Mrs.</label>
+            <br>
+
+            <input id="prefix" name="contact-info" type = "radio" value = "Mx." >
+            <label for="prefix">Mx.</label>
+            <br>
+
+            <label for = "second-button">Name:*</label>
+            <input type="text" name="Full-name" id="second-button" placeholder="Name" required> 
+            <br>
+            <br>
+
+            <label for = "Email">Email:*</label>
+            <input type="email" name="Email" id="Email" placeholder="Email" required> 
+            <br>
+            <br>
+            <h2>Payment Information</h2>
+            <button type="submit">Submit Payment</button>
+            <select id="payment-method" name="Payment Method">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            <br>
+            <br>
+
+            <label>Card Number:*</label>
+            <input id="card-number" type="tel" placeholder="xxxx xxxx xxxx xxxx" required>
+            <br>
+            <br>
+
+            <label>Expiration Date (MM/YY):*</label>
+            <input id="expiration-date" type="text" placeholder="mm/yy" required>
+            <br>
+            <br>
+            <input type="submit" value="Submit Payment">
+
+            </form>
+    </body>   
+</html>
+

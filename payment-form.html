@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Payment Form</h1>
+      <p>Required fields are marked by <u>*</u></p>
+      <!-- Contact Information -->
+      <label>
+        <h2>Contact Information</h2>
+        <input type="radio" id="Mr." value="Mr." name="prefix" checked />
+        <label for="Mr.">Mr. </label>
+        <br />
+
+        <input type="radio" id="Ms." value="Ms." name="prefix" />
+        <label for="Ms.">Ms. </label>
+        <br />
+
+        <input type="radio" id="Mrs." value="Mrs." name="prefix" />
+        <label for="Mrs.">Mrs. </label>
+        <br />
+
+        <input type="radio" id="Mx." value="Mx." name="prefix" />
+        <label for="Mx.">Mx. </label>
+        <br />
+        <br />
+        <!-- required name -->
+        Name*:
+        <input
+          type="text"
+          name="title"
+          id="text-title"
+          placeholder="Name"
+          required
+        /><br />
+        <br />
+      </label>
+      <label>
+        Email*:
+        <input
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Email"
+          required
+        /><br />
+      </label>
+      <!-- Payment Information -->
+      <h2>Payment Information</h2>
+      <label for="card-type">Card Type:</label>
+      <select id="card-type" name="card-type">
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+      </select>
+      <br />
+      <br />
+      <!-- Credit Card Number -->
+      <label for="creditcard-number"> Card Number:*</label>
+      <input
+        type="tel"
+        name="credit-card"
+        id="creditcard-number"
+        placeholder="xxxx xxxx xxxx xxxx"
+        required
+      />
+      <br />
+      <br />
+      <!-- Expiration Date -->
+      <label for="expiration-date"> Expiration Date (MM/YY):*</label>
+      <input
+        type="text"
+        name="credit-card"
+        id="expiration-date"
+        placeholder="mm/yy"
+        required
+      />
+      <br />
+      <br />
+      <!-- Submit Payment Button -->
+      <input type="submit" value="Submit Payment" />
+    </form>
+  </body>
+</html>

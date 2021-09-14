@@ -16,46 +16,46 @@
             <br>
 
             <label for="second">Ms.</label>
-            <input id="second" name="Contact" type="radio" value="Ms." checked/>
+            <input id="second" name="Contact" type="radio" value="Ms." />
             <br>
 
             <label for="third">Mrs.</label>
-            <input id="third" name="Contact" type="radio" value="Mrs." checked/>
+            <input id="third" name="Contact" type="radio" value="Mrs." />
             <br>
 
             <label for="fourth">Mx.</label>
-            <input id="fourth" name="Contact" type="radio" value="Mx." checked/>
+            <input id="fourth" name="Contact" type="radio" value="Mx." />
             <br>
             <br>
-            <label for="enterName">Name:*
-                <input id="enterName" name="enterName" type="text" required/>
+            <label for="enterName">Name*
+                <input id="enterName" name="enterName" type="text" placeholder="Name" required/>
             </label>
         <br>
         <br>
-            <label for="enterEmail">Email:*
-                <input id="email" name="email" type="text" required/>
+            <label for="enterEmail">Email*
+                <input id="email" name="email" type="email" placeholder="Email" required/>
             </label>
 
             <h2>Payment Information</h2>
             <label for="cardType">Card Type:</label>
-            <select id="cardType" name="cardType">
-                <option>--Card Type--</option>
+            <select id="cardType" name="credit-card">
                 <option value="visa">Visa</option>
                 <option value="masterCard">Mastercard</option>
-                <option value="american-express">American-Express</option>
+                <option value="american-express">American Express</option>
                 <option value="discover">Discover</option>
             </select>
             <br/>
             <br/>
-            <label for="cardNum">Card Number:*</label>
-            <input type="text" name="cardNum" id="cardNum" placeholder="xxxx xxxx xxxx xxxx">
+            <label for="cardNum">Card Number*</label>
+            <input type="text" name="cardNum" id="cardNum" placeholder="xxxx xxxx xxxx xxxx" required>
             <br/>
             <br/>
-            <label for="expir">Expiration Date (MM/YY):*</label>
-            <input type="text" name="expir" id="expir" placeholder="mm/yy">
-            <br />
+            <label for="expir">Expiration Date (MM/YY)*</label>
+            <input type="text" name="expir" id="expir" placeholder="mm/yy" required>
             <br/>
-            <button type="submit">Submit Payment</button> 
+            <br/>
+            <input type="submit" value="Submit Payment"/> 
+            
         </form>
 
 </body>

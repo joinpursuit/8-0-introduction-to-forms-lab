@@ -26,8 +26,29 @@
             <label for="fourth">Mx.</label>
             <input id="fourth" name="Contact" type="radio" value="Mx." checked/>
             <br>
+            <br>
+            <label for="enterName">Name:*
+                <input id="enterName" name="enterName" type="text" required/>
+            </label>
+        <br>
+        <br>
+            <label for="enterEmail">Email:*
+                <input id="email" name="email" type="text" required/>
+            </label>
 
-            <h2>Payment Information</h2>  
+            <h2>Payment Information</h2>
+            <label for="cardType">Card Type:</label>
+            <select id="cardType" name="cardType">
+                <option>--Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="masterCard">Mastercard</option>
+                <option value="american-express">American-Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="cardNum">Card Number:*</label>
+            <input type="number" name="cardNum" id="cardNum" placeholder="xxxx xxxx xxxx xxxx">
         </form>
 </body>
 </html>

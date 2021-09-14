@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+    <h2>Contact Information</h2>
+    <form>
+      <label>
+        <input id="Mr." name="visibility" type="radio" checked />
+        Mr.
+      </label>
+      <br />
+      <label>
+        <input id="Ms." name="visibility" type="radio" />
+        Ms.
+      </label>
+      <br />
+      <label>
+        <input id="Mrs." name="visibility" type="radio" />
+        Mrs.
+      </label>
+      <br />
+      <label>
+        <input id="Mx." name="visibility" type="radio" />
+        Mx.
+      </label>
+      <pre></pre>
+      <label for="post-name">
+        Name:*
+        <input
+          id="post-name"
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+        />
+      </label>
+      <pre></pre>
+      <label for="post-email">
+        Email:*
+        <input
+          id="post-email"
+          name="email"
+          type="email"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <h2>Payment Information</h2>
+      <label>
+        Card Type:
+        <select id="id-category" name="category">
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="american-express">American Express</option>
+          <option value="discover">Discover</option>
+        </select>
+      </label>
+      <pre></pre>
+      <label>
+        Card Number:*
+        <input
+          id="post-card-number"
+          name="card-number"
+          type="tel"
+          placeholder="xxxx xxxx xxxx xxxx"
+          required
+        />
+      </label>
+      <pre></pre>
+      <label>
+        Expiration Date (MM/YY):*
+        <input
+          id="post-expiration-date"
+          name="expiration-date"
+          type="text"
+          placeholder="mm/yy"
+          required
+        />
+      </label>
+      <pre></pre>
+      <input type="submit" value="Submit Payment" />
+    </form>
+  </body>
+</html>

@@ -11,10 +11,10 @@
     <p>Required fields are marked by <u>*</u></p>
     <form>
         <h2>Contact Information</h2>
-        <input type="radio" checked>Mr.<br>
-        <input type="radio">Ms.<br>
-        <input type="radio">Mrs.<br>
-        <input type="radio">Mx.<br><br>
+        <input type="radio" name="title" checked>Mr.<br>
+        <input type="radio" name="title">Ms.<br>
+        <input type="radio" name="title">Mrs.<br>
+        <input type="radio" name="title">Mx.<br><br>
         <label for="fname">Name:*</label>
         <input type="text" id="fname" name="fname" placeholder="Name" required><br><br>
         <label for="email">Email:*</label>
@@ -31,7 +31,7 @@
         <input type="tel" id="cardNumber" name="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required><br><br>
         <label for="expDate">Expiration Date (MM/YY):*</label>
         <input type="text" id="expDate" name="expDate" placeholder="mm/yy" required><br><br>
-        <input type="submit" value="Submit Payment">
+        <input type="submit" value="Submit Payment"><br><br>
     </form>
 </body>
 </html>

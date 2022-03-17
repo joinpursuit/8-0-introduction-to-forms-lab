@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./payment-form.css">
+      <title>HTML Form</title>
+    </head>
+    <body>
+      <h1>Payment Form</h1>
+
+      <p>Required fields are marked by <u>*</u></p>
+
+      <h2>Contact Information</h2>
+      <form>
+        <label for="Mr">
+          <input type="radio" name="personTitle" id="Mr" checked />
+          Mr.
+        </label>
+        <br />
+        <label for="Ms">
+          <input type="radio" name="personTitle" id="Ms" />
+          Ms.
+        </label>
+        <br />
+        <label for="Mrs">
+          <input type="radio" name="personTitle" id="Mrs" />
+          Mrs.       
+        </label>
+        <br />
+        <label for="Mx">
+          <input type="radio" name="personTitle" id="Mx" />
+          Mx.
+        </label>
+        <br />
+        <br />
+        <label>
+          Name:*
+          <input type="text" name="name" id="personName" placeholder="Name" required />
+        </label>
+        <br />
+        <br />
+        <label>
+          Email:*
+          <input type="email" name="email" id="personEmai" placeholder="Email" required />
+        </label>
+
+      <h2>Payment Information</h2>
+        <label>
+          Card Type:
+          <select name="cardType" id="cardType">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american-express">American Express</option>
+            <option value="discover">Discovery</option>
+          </select>
+        </label>
+        <br />
+        <br />
+        <label>
+          Card Number:*
+          <input type="number" name="cardNumber" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required />
+        </label>
+        <br />
+        <br />
+        <label>
+          Expiration Date (MM/YY):*
+          <input type="text" name="expDate" id="expDate" placeholder="mm/yy" required />
+        </label>
+        <br />
+        <br />
+        <input type="submit" value="Submit Payment" />
+      </form>
+    </body>
+  </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payment Form</title>
+    </head>
+    <body>
+        <h1>Payment Form</h1>
+        <p>Required fields are marked by <u>*</u></p>
+        <h3>Contact Information</h3>
+        <form>
+            <label>
+                <input
+                    id="mr-prefix-input"
+                    type="radio"
+                    name="prefix"
+                />
+                Mr.
+            </label><br>
+            <label>
+                <input
+                    id="ms-prefix-input"
+                    type="radio"
+                    name="prefix"
+                />
+                Ms.
+            </label><br>
+            <label>
+                <input
+                    id="mrs-prefix-input"
+                    type="radio"
+                    name="prefix"
+                />
+                Mrs.
+            </label><br>
+            <label>
+                <input
+                    id="mx-prefix-input"
+                    type="radio"
+                    name="prefix"
+                />
+                Mx.
+            </label><br><br>
+            <label>
+                Name:*
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Name"
+                    required
+                />
+            </label><br><br>
+            <label>
+                Email:*
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                />
+            </label>
+            <label>
+                <h3>Payment Information</h3>
+                Card Type:
+                <select id="card-type-input" name="card-type">
+                    <option>Select a Card Type *</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+            </label><br><br>
+            <label>
+                Card Number:*
+                <input
+                    id="card-number"
+                    type="number"
+                    placeholder="Card Number"
+                    required
+                />
+            </label><br><br>
+            <label>
+                Experiration Date (MM/YY) *
+                <input
+                  id="expiration-date-input"
+                  type="month"
+                  required
+                />
+              </label><br><br>
+              <button type="submit-payment">Submit Payment</button>
+        </form>
+    </body>
+</html>

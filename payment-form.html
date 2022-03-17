@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Forms</title>
+</head>
+<body>
+   
+     <h1>Payment Forms</h1>
+     <p>Required fields are marked by *</p>
+    
+    <form id="payment-form">
+        <h2>Contact Information</h2>
+        <label for="us">
+        <input type="radio" id="us" name="contact" value="mx" checked required/>
+        Mx.</label>
+    
+        <label for="mr">
+         <input type="radio" id="mr" name="contact" value="mr" required/>
+       Mr.</label>
+
+       <label for="ms">
+        <input type="radio" id="ms" name="contact" value="ms" required/>
+      Ms.</label>
+      <label for="mrs">
+        <input type="radio" id="mrs" name="contact" value="mrs" required/>
+      Mrs.</label>
+     
+          <label for="full-name"> Name*
+          <input type="text" placeholder="Name" id="full-name" name="full-name" required/>
+         </label>
+
+          <label for="email">Email*
+          <input type="email" placeholder="Email" id="email" name="email" required/>
+          </label>
+
+     <h2>Payment Information</h2>Type
+        <label for="card-type">
+        <select name="card-type" id="card-type">
+            <option value="visa" selected>Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american-express">American Express</option>
+            <option value="discover">Discover</option>
+         </select> 
+         </label>
+
+        <label for="card-number">Card Number*
+        <input type="number" name="card-number" placeholder="xxxx xxxx xxxx xxxx" id="card-number" required/>
+         </label>
+
+         <label for="expiry-date">
+          Expiration Date (MM/YY):*
+          <input type="text" name="expiry-date" id="expiry-date" placeholder="mm/yy" required />
+        </label>
+
+      <input type="submit" value="Submit Payment" />
+    </form>
+</body>
+</html>

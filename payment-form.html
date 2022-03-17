@@ -14,29 +14,29 @@
     <form>
         <h2>Contact Information</h2>
         <label>
-            <input type="radio" name="title" id="Mr." checked /> Mr.
+            <input type="radio" name="title" id="Mr." value="mr" checked /> Mr.
         </label>
         <br />
         <label>
-            <input type="radio" name="title" id="Ms." /> Ms.
+            <input type="radio" name="title" id="Ms." value="ms" /> Ms.
         </label>
         <br />
         <label>
-            <input type="radio" name="title" id="Mrs." /> Mrs.
+            <input type="radio" name="title" id="Mrs." value="mrs" /> Mrs.
         </label>
         <br />
         <label>
-            <input type="radio" name="title" id="Mx." /> Mx.
+            <input type="radio" name="title" id="Mx." value="mx" /> Mx.
         </label>
         <br />
         <br />
         <label>Name:*
-            <input type="text" placeholder="Name" id="name" required />
+            <input type="text" placeholder="Name" id="name" name="name" required />
         </label>
         <br />
         <br />
         <label>Email:*
-            <input type="email" placeholder="Email" id="email" required />
+            <input type="email" placeholder="Email" id="email" name="email" required />
         </label>
         <h2>Payment Information</h2>
         <label>
@@ -52,13 +52,13 @@
         <br />
         <label>
             Card Number:*
-            <input type="tel" placeholder="xxxx xxxx xxxx xxxx" id="card-number" required />
+            <input type="tel" placeholder="xxxx xxxx xxxx xxxx" id="card-number" name="card-number" required />
         </label>
         <br />
         <br />
         <label>
             Expiration Date (MM/YY):*
-            <input type="text" placeholder="mm/yy" id="expire-date" required />
+            <input type="text" placeholder="mm/yy" id="expire-date" name="expire-date" required />
         </label>
         <br />
         <br />

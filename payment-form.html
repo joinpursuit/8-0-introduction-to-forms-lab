@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+    <h2>Contact Information</h2>
+    <label>
+        <input
+        id="public" 
+        type="radio"
+        name="person title" 
+        value="Mr."
+        checked/>
+        Mr.
+        <br />
+        <input 
+        id="public"
+        type="radio"
+        name="person title"
+        value="Ms."
+        />
+        Ms.
+        <br/>
+        <input 
+        id="public"
+        type="radio"
+        name="person title"
+        value="Mrs."
+        />
+        Mrs.
+        <br />
+        <input 
+        id="public"
+        type="radio"
+        name="person title"
+        value="Mx."
+        />
+        Mx.
+        <br />
+        <br />
+      <label>Name:*</label>
+      <input 
+      type="text" 
+      placeholder="Name" 
+      required />
+      <br />
+      <label>Email:*</label>
+      <input 
+      type="email"
+      placeholder="Email"
+      required/>
+      <br />
+
+        <h2>Payment Information</h2>
+        <label>Card Type:</label>
+        <select id="type-program-input" name="program" required>
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+    </select>
+    </label>
+    <br />
+    <br />
+    <label>Card Number:*</label>
+    <input 
+    type="tel"
+    placeholder="xxxx xxxx xxxx xxxx"
+    required/>
+    <br />
+    <br />
+    <label>Expiration Date (MM/YY):*</label>
+    <input 
+    type="text"
+    placeholder="mm/yy"
+    required/>
+    <br />
+    <br />
+<input type="submit" value="Submit Payment" />
+</form>
+</body>
+</html>

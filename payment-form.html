@@ -12,92 +12,95 @@
         <p>Required fields are marked by <u>*</u></p>
         <h2>Contact Information</h2>
     
-        <ul>
-            <li>
+        <input 
+            id="Info-Mr." 
+            type="radio"
+            name="prefix"  
+            checked />
+            <label for="Info-Mr.">Mr.</label>
+            <br />
+            
+        <input 
+             id="Info-Ms." 
+             type="radio"
+             name="prefix"  />
+            <label for="Info-Ms.">Ms.</label>
+            <br />
+           
+         <!-- 2 radios with nested elements below. 2 radios using "for" above-->
+            <label>
                 <input 
-                id="Info-Mr." 
-                name="prefix-info" 
-                type="radio" value="Mr." 
-                checked />
-                <label for="Info-Mr.">Mr.</label>
-            </li>
-            <li>
+                    id="Info-Mrs."
+                    name="prefix" 
+                    type="radio"/>
+                Mrs.
+            </label>
+            <br />
+            
+        
+            <label>
                 <input 
-                id="Info-Ms." 
-                name="prefix-info" 
-                type="radio" 
-                value="Ms." />
-                <label for="Info-Ms.">Ms.</label>
-            </li> 
-            <li>
-                <input 
-                id="Info-Mrs." 
-                name="prefix-info" 
-                type="radio" 
-                value="Mrs." />
-                <label for="Info-Mrs.">Mrs.</label>
-            </li>
-             <li>
-                 <input 
-                 id="Info-Mx." 
-                 name="prefix-info" 
-                 type="radio" 
-                 value="Mx." />
-                <label for="Info-Mx.">Mx.</label>  
-            </li>
-        </ul>
+                    id="Info-Mx."
+                    name="prefix"
+                    type="radio" />
+                Mx.
+            </label>  
+            <br />
+            <br />
+            
     
         <label for="name">Name:*</label> 
         <input 
-        type="text" 
-        name="name" 
-        id="name" 
-        placeholder="Name" 
-        required />
-        <br />
-        <br />
+            type="text" 
+            id="name" 
+            placeholder="Name" 
+            required />
+            <br />
+            <br />
         
         <label for="email">Email:*</label>
         <input 
-        type="email" 
-        name="email" 
-        id="email" 
-        placeholder="Email" 
-        required />
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="Email" 
+            required />
     
         <h2>Payment Information</h2>
     
         <label for="pay-card">Card Type: </label>
         <select 
-        id="pay-card" 
-        name="card">
-            <option value="visa">Visa</option>
-            <option value="mastercard">Mastercard</option>
-            <option value="american-express">American Express</option>
-            <option value="discover">Discover</option>
+            id="pay-card" 
+            name="card">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
         </select>
-            <br />
-            <br />
+        <br />
+        <br />
     
-         <label for="pay-card">Card Number:*</label>
-         <input 
-         type="tel" 
-         name="card-number" 
-         id="card-number" 
-         placeholder="xxxx xxxx xxxx xxxx" 
-         required />
+        <label for="pay-card">Card Number:*</label>
+        <input 
+            type="tel" 
+            name="card-number" 
+            id="card-number" 
+            placeholder="xxxx xxxx xxxx xxxx" 
+            required />
             <br />
             <br />
         <label for="expiration-date">Expiration Date(MM/YY)</label>
         <input 
-        type="text" 
-        name="expiration-date" 
-        id="expiration-date" 
-        placeholder="mm/yy" 
-        required />
+            type="text" 
+            name="expiration-date" 
+            id="expiration-date" 
+            placeholder="mm/yy" 
+            required />
             <br />
             <br />
+
         <input type="submit" value="Submit Payment" />
+        
     </form>
 </body>
 </html>

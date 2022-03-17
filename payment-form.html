@@ -9,19 +9,21 @@
     <body>
         <h1>Payment Form</h1>
         <p>Required fields are marked by <u>*</u></p>
-        <h3>Contact Information</h3>
+        <h2>Contact Information</h2>
         <form>
             <label>
                 <input
-                    id="mr-prefix-input"
+                    id="mr-choice1"
                     type="radio"
                     name="prefix"
+                    checked
+
                 />
                 Mr.
             </label><br>
             <label>
                 <input
-                    id="ms-prefix-input"
+                    id="ms-choice2"
                     type="radio"
                     name="prefix"
                 />
@@ -29,7 +31,7 @@
             </label><br>
             <label>
                 <input
-                    id="mrs-prefix-input"
+                    id="mrs-choice3"
                     type="radio"
                     name="prefix"
                 />
@@ -37,7 +39,7 @@
             </label><br>
             <label>
                 <input
-                    id="mx-prefix-input"
+                    id="mx-choice4"
                     type="radio"
                     name="prefix"
                 />
@@ -62,10 +64,9 @@
                 />
             </label>
             <label>
-                <h3>Payment Information</h3>
+                <h2>Payment Information</h2>
                 Card Type:
-                <select id="card-type-input" name="card-type">
-                    <option>Select a Card Type *</option>
+                <select id="type-card-input" name="card">
                     <option value="visa">Visa</option>
                     <option value="mastercard">Mastercard</option>
                     <option value="american-express">American Express</option>
@@ -77,15 +78,16 @@
                 <input
                     id="card-number"
                     type="number"
-                    placeholder="Card Number"
+                    placeholder="xxxx xxxx xxxx xxxx"
                     required
                 />
             </label><br><br>
             <label>
-                Experiration Date (MM/YY) *
+                Experiration Date (MM/YY):*
                 <input
                   id="expiration-date-input"
-                  type="month"
+                  type="text"
+                  placeholder="mm/yy"
                   required
                 />
               </label><br><br>

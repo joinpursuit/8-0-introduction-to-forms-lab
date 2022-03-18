@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+    <form>
+    <h2>Contact Information</h2>
+        <label>
+            <input 
+            id = "Mr-title-prefix-input"
+            type = "radio"
+            name = "title-prefix"
+            checked
+            />
+            Mr.
+       </label>
+       <br/>
+    <label>
+        <input 
+        id="Ms-title-prefix-input" 
+        type="radio" 
+        name="title-prefix" />
+        Ms.
+    </label>
+    <br/>
+    <label>
+        <input 
+        id="Mrs-title-prefix-input" 
+        type="radio" 
+        name="title-prefix" />
+        Mrs.
+    </label>
+    <br/>
+    <label>
+        <input 
+        id="Mx-title-prefix-input" 
+        type="radio" 
+        name="title-prefix" />
+        Mx.
+    </label>
+    <br/>
+    <br/>
+    <label>
+        Name:* 
+        <input
+        id = "name-input"
+        type = "text"
+        placeholder = "Name"
+        required
+        />
+        <label>
+    <br/>
+    <br/>
+    Email:*
+    <input 
+    id="email-input" 
+    type="email" 
+    placeholder="Email" 
+    required
+    />
+    <br/>
+<h2>Payment Information</h2>
+<label>
+    Card Type:
+    <select 
+    id ="type-card-input"
+    card = "program" required>
+    <option value="visa">Visa</option>
+    <option value="mastercard">Mastercard</option>
+    <option value="american-express">American Express</option>
+    <option value="discover">Discover</option>
+</select>
+</label>
+<br/>
+<br/>
+<label>
+    Card Number:*
+    <input 
+    id="Card-number-input"
+    type= "tel"
+    placeholder="xxxx xxxx xxxx xxxx"
+    required
+    />
+    <label>
+        <br/>
+        <br/>
+        <label>
+            Expiration Date(MM/YY):*
+            <input 
+            id="Expiration-date-input"
+            type="text"
+            placeholder="mm/yy"
+            required
+            />
+            <br/>
+            <br/>
+        <label>
+       <input 
+       class="favorite styled"
+       type="submit"
+       value = "Submit Payment">
+    </label>
+    </form>
+
+
+
+</body>
+</html>

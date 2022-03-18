@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+    <form>
+        <h2>Contact Information</h2>
+        <label>
+          <input
+            id="Mr-Title-Prefix-input"
+            type="radio"
+            name="Title-Prefix"
+            checked
+          />
+          Mr.
+        </label>
+        <br/>
+        <label>
+          <input
+            id="Ms-Title-Prefix-input"
+            type="radio"
+            name="Title-Prefix"
+          />
+          Ms.
+        </label>
+        <br/>
+        <label>
+          <input
+            id="Mrs-Title-Prefix-input"
+            type="radio"
+            name="Title-Prefix"
+          />
+          Mrs.
+        </label>
+        <br/>
+        <label>
+          <input
+            id="Mx-Title-Prefix-input"
+            type="radio"
+            name="Title-Prefix"
+          />
+          Mx.
+        </label>
+        <br/>
+        <br/>
+        <label>
+            Name:*
+            <input
+              id="name-input"
+              type="text"
+              placeholder="Name"
+              required
+            />
+        </label>
+            <br/>
+            <br/>
+            Email:*
+            <input
+              id="email-input"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <br/>
+            <br/>
+            <h2>Payment Information</h2>
+            <label>
+                Card Type:
+            <select id="type-Card-input" card="program" required>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            </label>
+            <br/>
+            <br/>
+            <label>
+                Card Number:*
+                <input
+                  id="Card-Number-input"
+                  type="tel"
+                  placeholder="xxxx xxxx xxxx xxxx"
+                  required
+                />
+            <label>
+            <br/>
+            <br/>
+            <label>
+                Expiration Date(MM/YY):*
+                <input
+                  id="Expiration-Date-input"
+                  type="text"
+                  placeholder="mm/yy"
+                  required
+                />
+                <br/>
+                <br/>
+                <label> 
+                    <input
+                     class="favorite styled"
+                     type="submit"
+                     value="Submit Payment"
+                      /> 
+    </form>    
+</body>
+</html>

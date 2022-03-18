@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <style>
+        body {width: 50%;padding: 0;margin: auto;text-align: justify;font-family: 'Open Sans', sans-serif;line-height: 2em;background-color: #f3f3f3;}
+        h1 {margin: 0;text-transform: uppercase;letter-spacing: 5px;font-size: 2em;font-weight: 800;}
+        h2 {letter-spacing: 3px;font-weight: 600;line-height: 2em; border-bottom: 2px solid #333;}
+        p{margin: 0;}
+        a {padding: 0 1em; display: block;color: #333;font-weight: 600;text-decoration: none;}
+        form {padding: 3em;margin: 3em;border: 15px solid #cdcd;;border-radius: 10px;background-color: #FFF;box-shadow: 3px 3px #d9d9d9;}
+        div {padding: 1em;margin: 1em 0;}
+        input[type="text"],input[type="email"], select {width: 40%;padding: 10px 10px;font-size: 1em; font-weight: 400;color: #666;background-color: #FFF;border: 1px solid #666;border-radius: 2px;}
+        input#exp-date {width: 10%;}
+        input#submit {padding: 1em 5em;margin: 1em 0; font-size: 1em; font-weight: 600;color: #FFF;background-color: #333;border-radius: 10px;transition: 0.5s;}
+        input#submit:hover {background-color: #080707;cursor: pointer;}
+        section:nth-child(1), section:nth-child(4) {text-align: center;}
+    </style>
+</head>
+<body>
+<form method="get" >
+    <section class="header">
+        <h1>Payment Form</h1>
+        <p>Required fields are marked by *</p>
+    </section>
+    <section>
+        <h2>Contact Information</h2>
+        <div>
+            <label>
+                Mr.<input id="mr" name="visibility" type="radio" value="mr" checked/>
+            </label>
+            <label>
+                Ms.<input id="ms" name="visibility" type="radio" value="ms" />
+            </label>
+            <label>
+                Mrs.<input id="mrs" name="visibility" type="radio" value="mrs" />
+            </label>
+            <label>
+                Mx.<input id="mx" name="visibility" type="radio" value="mx" />
+            </label>
+        </div>
+        <div>
+            <label for="name">
+                Name *
+                <input id="name" name="name" type="text" value="name" placeholder="Name" required/>
+            </label>
+        </div>
+        <div>
+            <label for="email">
+                Email *
+                <input id="email" name="email" type="email" value="email" placeholder="Email" required/>
+            </label>
+        </div>
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <div>
+            <label for="card">
+                Card type *
+                <select id="card" name="usercard" required>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="card-number">
+                Card Number *
+                <input id="card-number" type="text" name="card-number" placeholder="xxxx xxxx xxxx xxxx" required="true"/>
+            </label>
+        </div>
+        <div>
+            <label for="exp-date">
+                Expiration Date (MM/YY)*
+                <input type="text" id="exp-date" placeholder="mm/yy" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" required="true"/>
+            </label>
+        </div>
+    </section>
+    <section>
+        <input id="submit" type="submit" class="buttom" value="Submit Payment"/>
+    </section>
+</form>    
+</body>
+</html>

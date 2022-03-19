@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <h1>Payment Form</h1>
+   
+</head>
+<body>
+     <p>Required fields are marked by *</p>
+    <h2>Contact Information</h2>
+    <br>
+    <label>
+    <input type = "radio" checked>Mr. <br>
+    <input type = "radio" >Ms.<br>
+    <input type = "radio" >Mrs.<br>
+    <input type = "radio" >Mx.
+</label> <br>
+    <br>
+    <form>
+        <label>
+        Name:* 
+        <input type = "text" id = "name1" text = "first" name = "name1"  placeholder="Name" required/>
+        <br>
+        <br>Email:* 
+        <input type = "email" id = "name2"  name = "" placeholder = "Email" required/>
+        </label>
+        </form> <br>
+    
+        <h2>Payment Information</h2>
+        <label>
+        Card Type:
+        <select>
+         
+            <option value = "visa">Visa</option>
+            <option value = "mastercard">Mastercard</option>
+            <option value = "american-express">American Express</option>
+            <option value = "discover">Discover</option>
+        
+
+        </select> <br>
+        </label>
+       <br> Credit Number:* <input type = "text" id = "credit" name = "creditcard" placeholder="xxxx xxxx xxxx xxxx" required/>
+       <br> Experiration Date (MM/YY):* <input type = "text" id = "date" name = "date" placeholder="mm/yy" required/>
+       <input type = "submit" value = "Submit Payment">
+        
+
+
+ 
+</body>
+</html>

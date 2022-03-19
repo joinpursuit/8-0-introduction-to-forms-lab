@@ -43,41 +43,40 @@
     </label>
     <br/>
     <label>
-        Name
-        <input id="Name*"
-        name="name" type text />
+        Name:*
+        <input id="Name"
+        placeholder="Name" type="text" required/>
     </label>
     <br/>
     <label>
-        Email
-        <input id="Email*"
-        name="email" type text />
+        Email:*
+        <input id="Email"
+        placeholder="Email" type="email" required/>
     </label>
 
 
     <h2>Payment Information</h2>
 
     <select>
-        <option value="Visa">Visa</option>
-        <option value="Mastercard">Mastercard</option>
-        <option value="American Express">American Express</option>
-        <option value="Discover">Discover</option>
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
     </select>
     <br/>
     <label>
         <input id="Credit Card"
-        placeholder="xxxx xxxx xxxx xxxx" type="text" />
+        placeholder="xxxx xxxx xxxx xxxx" type="text" required/>
     </label>
     <br/>
     <label>
         <input id="Expiration Date"
         placeholder="mm/yy"
-        type="date" />
+        type="text" required/>
     </label>
     <br/>
-    <input id="Submit"
-    placeholder="Submit Payment"
-    type="text">
+    <input type="Submit" value="Submit Payment"/>
+    
 
 </form>  
 </body>

@@ -14,13 +14,26 @@
         <p>Required fields are marked by <u>*</u></p>
 
         <h2>Contact Information</h2>
-        <input type="radio" name="honorific" value="Mr" checked>Mr.
-        <input type="radio" name="honorific" value="Ms">Ms.
-        <input type="radio" name="honorific" value="Mrs">Mrs.
-        <input type="radio" name="honorific" value="Mrx">Mx.
+        
+        <input type="radio" id="Mr" name="honorific" value="Mr" checked>
+        <label for="Mr">Mr.</label>
+        <br>
+       
+        <input type="radio" id="Ms" name="honorific" value="Ms">
+        <label for="Ms">Ms.</label>
+        <br>
 
+        <input type="radio" id="Mrs" name="honorific" value="Mrs">
+        <label for="Mrs">Mrs.</label>
+        <br>
 
+        <input type="radio" id="Mx" name="honorific" value="Mx">
+        <label for="Mx">Mx.</label>
+        <br>
+
+        <br>
         Name:*<input type="text" placeholder="Name" required>
+        <br><br>
         Email:*<input type="email" placeholder="Email" required>
 
 
@@ -33,24 +46,13 @@
             <option value="american-express">American Express</option>
             <option value="discover">Discover</option>
         </select>
+        <br>
         Card Number:* <input placeholder="xxxx xxxx xxxx xxxx" type="text" required>
+        <br>
         Expiration Date (MM/YY):* <input placeholder="mm/yy" type="text" required>
+        <br>
         <input type="submit" value="Submit Payment">
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <marquee>SECRET BONUS</marquee>
 </body>
 

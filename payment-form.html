@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Payment Form</h1>
+<p>Required fields are marked by <u>*</u></p>
+
+<h2>Contact Information</h2>
+<form action="">
+    <label>
+        <input id="mr" name="prefix" type="radio" value="Mr" checked />
+        Mr.
+      </label>
+      <br>
+      <label>
+        <input id="ms" name="prefix" type="radio" value="Ms" />
+        Ms.
+      </label>
+      <br>
+      <label>
+        <input id="mrs" name="prefix" type="radio" value="Mrs" />
+        Mrs.
+      </label>
+      <br>
+      <label>
+        <input id="mx" name="prefix" type="radio" value="Mx" />
+        Mx.
+      </label>
+      <br>
+      <br>
+      <!-- name email -->
+      <label for="name">Name:*</label>
+      <input type="text" id="name" name= "name" placeholder="Name" required/>
+
+      <br>
+      <br>
+      
+      
+      <label for="email">Email:*</label>
+      <input type="email" id="email" name="email" placeholder="Email" required/>
+
+      <h2>Payment Information</h2>
+
+      <label>
+        Card Type:
+        <select id="post-Card-Type" name="Card-Type">
+          <!-- <option>-- Select a Card Type --</option> -->
+          <option value="visa" checked >Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="american-express">American Express</option>
+          <option value="discover">Discover</option>
+        </select>
+      </label>
+      <br>
+      <br>
+      <label for="cardNum">Card Number:*</label>
+      <input type="tel" id= "cardNum" name="cardNum" placeholder="xxxx xxxx xxxx xxxx" required/>
+      <br>
+      <br>
+      <label for="expirDate">Expiration Date (MM/YY):*</label>
+      <input type="text" id= "expirDate" name="expirDate" placeholder="mm/yy" required/>
+      <br>
+      <br>
+      <input type="submit" value="Submit Payment" />
+      <!-- <button type="submit">Submit Payment</button> -->
+
+</form>
+
+</body>
+</html>

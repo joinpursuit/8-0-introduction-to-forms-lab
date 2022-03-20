@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form></title>
+    <h1>Payment Form</h1>
+
+</head>
+<body>
+    <p>Required fields are marked by *</p>
+    <h2>Contact Information</h2>
+    <br>
+    <label>
+    <input type = "radio" id = "contact" Checked>Mr.
+    <br>
+    <input type = "radio" id = "contact">Ms.
+    <br>
+    <input type = "radio" id = "contact">Mrs.
+    <br>
+    <input type = "radio" id = "contact">Mx.
+    <br>
+</label>
+<br>
+<form>
+    Name:* <input type = "text" id = "name1" text = "name1" name = "first" placeholder='Name'required/>
+    <br>
+    Email:* <input type = "email" id = "name2" text = "name2" name = "second" placeholder='Email'required/>
+</form>
+<br>
+<h2>Payment Information</h2>
+<label>Card Type:
+<select>
+    <option value = "visa" > Visa </option>
+    <option value = "mastercard" > Mastercard </option>
+    <option value = "american Express" > American Express </option>
+    <option value = "discover" > Discover </option>
+</select>
+</label>
+<form>
+    Card Number:* <input type = "text" id = "card" name = "card1" placeholder ="**** **** **** ****"></input>
+</form>
+<form>
+    Expiration Date(MM/YY):* <input type = "text" id = "exp date" name = "Exp Date"></input> 
+</form>
+<button>Submit Payment</button>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Forms Lab</title>
+</head>
+<body>
+    <form>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+
+    <h2>Contact Information</h2>
+        
+        <label>
+            <input id="honorific1" name="honorific" type="radio" value="honorific" checked />
+            Mr.
+        </label>
+        <br>
+        <label>
+            <input id="honorific2" name="honorific" type="radio" value="honorific" />
+            Ms.
+        </label>
+        <br>
+        <label>
+            <input id="honorific3" name="honorific" type="radio" value="honorific" />
+            Mrs.
+        </label>
+        <br>
+        <label>
+            <input id="honorific4" name="honorific" type="radio" value="honorific" />
+            Mx.
+        </label>
+        <br>
+        <br>
+        <label>
+            Name:*
+            <input id="name" name="name" type="text" placeholder="Name" required />
+        </label>
+        <br>
+        <br>
+        <label>
+            Email:*
+            <input id="email" name="email" type="email" placeholder="Email" required />
+        </label>
+
+        <h2>Payment Information</h2>
+        <label>
+            Card Type:
+            <select id="person-cards" name="cards">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label>
+            Card Number:*
+            <input id="card-number" name="cardnumber" type="tel" placeholder="xxxx xxxx xxxx xxxx" required />
+        </label>
+        <br>
+        <br>
+        <label>
+            Expiration Date(MM/YY):*
+            <input id="card-number" name="cardnumber" type="text" placeholder="mm/yy" required />
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="submit" value="Submit Payment" />
+        </label>
+    </form>
+</body>
+</html>

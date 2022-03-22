@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <form action="">
-    <h1>Payment Form</h1>
-    <p>Required fields are marked by *</p>
+      <h1>Payment Form</h1>
+      <p>Required fields are marked by *</p>
 
-    <h2>Contact Information</h2>
-    <label>
-        <input
-        name="suffix"
-        type="radio"
-        checked="checked" />
+      <h2>Contact Information</h2>
+      <label>
+        <input name="suffix" type="radio" checked="checked" />
         Mr.
-    </label>
-    <br/>
-    <label>
-        <input
-        name="suffix"
-        type="radio" />
+      </label>
+      <br />
+      <label>
+        <input name="suffix" type="radio" />
         Ms.
-    </label>
-    <br/>
-    <label>
-        <input
-        name="suffix"
-        type="radio" />
+      </label>
+      <br />
+      <label>
+        <input name="suffix" type="radio" />
         Mrs.
-    </label>
-    <br/>
-    <label>
-        <input
-        name="suffix"
-        type="radio" />
+      </label>
+      <br />
+      <label>
+        <input name="suffix" type="radio" />
         Mx.
-    </label>
+      </label>
+      <br />
+      
+      <br />
+<label>Name*</label>
+<input id="Name"
+        name="Name"
+       type="text" 
+       placeholder="Name"
+       required />
+      <br/>
+      <br/>
+
+      <label>Email*</label> 
+      <input id="Email"
+            name="Email"
+            type="email"
+            placeholder="Email"
+            required/>
+            <br/>
+            <br/>
+      <h2>Payment Information</h2>
+      <label>Card Type:</label>
+      <select id="Card Type" name="Visa"
+      <option>--Visa</option>
+      <option value="Visa">Visa</option>
+    <option value="Mastercard">Mastercard</option>
+    <option value="American Express">American Express</option>
+    <option value="Discover">Discover</option>
+
+
+    <br>
+    <br>
     <br>
 
-    <label>
-        Name
-        <input id="Name"
-        name="name" type text />
-    </label>
-    <br/>
-
-    <label>
-        Email
-        <input id="Email"
-        name="email" type text />
-    </label>    
-
-    <h2>Payment Information</h2>
-    <select>
-        <option>--Visa--</option>
-        <option value="Discover">Discover</option>
-        <option value="American Express">American Express</option>
-        <option value="Mastercard">Mastercard</option>
-
-    </select>
-
-    <label>
-        <input id="Credit Card"
-        placeholder="xxxx xxxx xxxx xxxx" type text />
-    </label>
-    <br/>
-    <label>
-        <input id="Expiration Date"
+    <label>Card Number*
+      </label>
+        <input id="Card Number" placeholder="XXXX XXXX XXXX XXXX"
+        name="Card Number"
+         type text />
+      <br/>
+      <br/>
+      <label>Expiration Date (MM/YY):*</label>
+        <input id="Expiration Date" 
+        name="Expiration Date"
         placeholder="mm/yy"
-        type date />
-    </label>
-    <input type="Submit Payment"
-
-
-
+        type text
+        reqired />
+      <br/>
+      <br/>
+      
+          <input id="Submit Payment"
+        type="submit" value="Submit Payment"/>
     
-</form>
-</body>
+      </label>
+    </form>
+  </body>
 </html>

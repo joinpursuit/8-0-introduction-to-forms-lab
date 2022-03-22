@@ -7,13 +7,13 @@
     <title>Payment Form</title>
   </head>
   <body>
-    <form action="">
+    <form >
       <h1>Payment Form</h1>
       <p>Required fields are marked by *</p>
 
       <h2>Contact Information</h2>
       <label>
-        <input name="suffix" type="radio" checked="checked" />
+        <input name="suffix" type="radio" checked />
         Mr.
       </label>
       <br />
@@ -34,55 +34,57 @@
       <br />
       
       <br />
-<label>Name*</label>
-<input id="Name"
-        name="Name"
+        <label>Name*
+        <input id="name"
+        name="name"
        type="text" 
        placeholder="Name"
-       required />
+       required /></label>
       <br/>
       <br/>
 
-      <label>Email*</label> 
-      <input id="Email"
-            name="Email"
+      <label>Email*
+      <input id="email"
+            name="email"
             type="email"
             placeholder="Email"
-            required/>
+            required/></label> 
             <br/>
             <br/>
       <h2>Payment Information</h2>
-      <label>Card Type:</label>
-      <select id="Card Type" name="Visa"
-      <option>--Visa</option>
-      <option value="Visa">Visa</option>
-    <option value="Mastercard">Mastercard</option>
-    <option value="American Express">American Express</option>
-    <option value="Discover">Discover</option>
+      <label>Card Type:
+      <select id="cardtype" name="card">
+      <option value="visa">Visa</option>
+     <option value="mastercard">Mastercard</option>
+     <option value="american-express">American Express</option>
+      <option value="discover">Discover</option>
+      </select>
+        </label>
 
 
-    <br>
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <label>Card Number*
-      </label>
-        <input id="Card Number" placeholder="XXXX XXXX XXXX XXXX"
-        name="Card Number"
-         type text />
-      <br/>
-      <br/>
-      <label>Expiration Date (MM/YY):*</label>
-        <input id="Expiration Date" 
-        name="Expiration Date"
-        placeholder="mm/yy"
-        type text
-        reqired />
-      <br/>
-      <br/>
+        <label>Card Number*
       
-          <input id="Submit Payment"
-        type="submit" value="Submit Payment"/>
+        <input id="card-number" placeholder="xxxx xxxx xxxx xxxx"
+        name="card-number"
+         type="tel" required />
+        </label>
+      <br/>
+      <br/>
+      <label>Expiration Date (MM/YY):*
+        <input id="expiration-date" 
+        name="expiration-date"
+        placeholder="mm/yy"
+        type="text" 
+        required />
+        </label>
+      <br/>
+      <br/>
+        <label> 
+         
+      <input  type="submit" value="Submit Payment" />
     
       </label>
     </form>

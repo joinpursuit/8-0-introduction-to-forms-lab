@@ -1,0 +1,66 @@
+<h1>Payment Form</h1>
+
+<p>Required fields are marked by <u>*</u></p>
+
+<h2>Contact Information</h2>
+
+<label>
+  <input id="MR." name="visibility" type="radio" value="Mr." checked />
+  Mr.
+</label>
+<br />
+<label>
+  <input id="Ms." name="visibility" type="radio" value="Ms." />
+  Ms.
+</label>
+<br />
+<label>
+  <input id="Mrs." name="visibility" type="radio" value="Mrs." />
+  Mrs.
+</label>
+<br />
+<label>
+<input id="Mx." name="visibility" type="radio" value="Mx." />
+Mx.
+</label>
+<br />
+<br />
+<form action="">
+  Name:*
+  <input type="text" id="name" name="fullname" placeholder="Name" required/>
+  <br />
+  <br />
+  Email:*
+  <input type="email" id="email" name="email" placeholder="Email"required/>
+  <br />
+  <br />
+  <h2>Payment Information</h2>
+  <br />
+  <label>
+    Card Type:
+    <select id="post-category" name="category">
+      <option value="visa" checked >Visa</option>
+      <option value="mastercard">Mastercard</option>
+      <option value="american-express">American Express</option>
+      <option value="discover">Discover</option>
+    </select>
+  </label>
+  <br />
+  <br />
+  Card Number:*
+  <input type="text" id="card-number" name="" placeholder="xxxx xxxx xxxx xxxx" required/>
+  <br />
+  <br />
+  Expiration Date (MM/YY):*
+  <input type="text" id="date" name="" placeholder="mm/yy" required/>
+  <br />
+  <br />
+  <input type="Submit" value="Submit Payment" />
+
+</form>
+
+
+
+
+
+    

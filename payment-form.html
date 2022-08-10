@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triane Payment Form</title>
+    <title>Triane's Payment Form</title>
 </head>
 <body>
 <h1>Payment Form</h1>
 <p>Required fields are marked by <u>*</u></p>
 <!--The u helps with the underline like in the photo-->
-<h2>Contact InFormation</h2>
+<h2>Contact Information</h2>
 <form>
     <input id="mr." value="public" type="radio" name="visible" checked/> Mr.
     <br>
@@ -25,32 +25,31 @@
     <input id="name" placeholder="Name" type="text" name="name" required>
     <br />
     <br />
-    <label for="email">Email:*</label>
-    <input id="email" placeholder="Email" type="text" name="email" required>
+    <label for="Email">Email:*</label>
+    <input id="Email" placeholder="Email" type="email" name="Email" required>
     <br />
     <br />
-    <!--select-->
-    <!--Option-->
+    <h2>Payment Information</h2>
+    <label for="cardType">Card Type:</label>
+    <select name="PaymentMethod" id="PaymentMethod">
+        <!--select--> 
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+        <!--Option-->
+    </select>
+    <br />
+    <br />
+    <label for="cardNumber">Card Number:*</label>
+    <input #Card Number placeholder="xxxx xxxx xxxx xxxx" value=" " required/>
+    <br>
+    <br>
+    <label for="experationDate" id="experationDate">Expiration Date (MM/YY):*</label>
+    <input type="text" placeholder="mm/yy" required/>
+    <br>
+    <br>
+    <input type ="submit" placeholder="Submit Payment" value="Submit Payment"/>
 </form>
 </body>
 </html>
-
-- [ ] Your submit button should be an `input` element.
-
-- [X] You should have all four radio buttons listed above.
-
-- [X] The first radio button should be checked by default.
-
-- [X] When a radio button is clicked, the other radio buttons should be de-selected.
-
-- [X] The Name field should be a text input and have a placeholder of `Name`.
-
-- [X] The Email field should be an email input and have a placeholder of `Email`.
-
-- [ ] The Dropdown should include four options: "Visa", "Mastercard", "American Express", and "Discover".
-
-- [ ] The Dropdown option's values should be "visa", "mastercard", "american-express", and "discover".
-
-- [ ] The Credit Card field should be a `tel` type and have a placeholder of "xxxx xxxx xxxx xxxx".
-
-- [ ] The Expiration Date field should be a `text` type and should have a placeholder of "mm/yy".

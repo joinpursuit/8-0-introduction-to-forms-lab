@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Payment Form</h1>
+
+    <p>Required fields are marked by <u>*</u></p>
+
+    <form>
+      <h2>Contact Information</h2>
+      <radio>
+        <input type="radio" id="Mr" name="pickOne" checked /> Mr.
+        <br />
+        <input type="radio" id="Ms" name="pickOne" /> Ms.
+        <br />
+        <input type="radio" id="Mrs" name="pickOne" /> Mrs.
+        <br />
+        <input type="radio" id="Mx" name="pickOne" /> Mx.
+      </radio>
+      <br />
+      <br />
+      <label for="$name">Name:*</label>
+      <input id="#name" type="text" name="#name" placeholder="Name" required />
+      <br />
+      <br />
+
+      <label for="#email">Email:*</label>
+      <input
+        id="#email"
+        type="email"
+        name="#email"
+        placeholder="Email"
+        required
+      />
+      <br />
+      <br />
+      <h2>Payment Information</h2>
+      <label for="cardtype">Card Type:</label>
+      <select name="cardtype" id="cartype">
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+      </select>
+      <br />
+      <br />
+      <label for="cardnumber">Card Number:*</label>
+      <input
+        id="cardnumber"
+        type="tel"
+        name="cardnumber"
+        placeholder="xxxx xxxx xxxx xxxx"
+        required
+      />
+      <br />
+      <br />
+      <label for="expiration">Expiration Date (MM/YY):*</label>
+      <input
+        id="expiration"
+        type="text"
+        name="expiration"
+        placeholder="mm/yy"
+        required
+      />
+      <br />
+      <br />
+      <input type="submit" value="Submit Payment" />
+    </form>
+  </body>
+</html>

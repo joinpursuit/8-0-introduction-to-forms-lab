@@ -9,10 +9,8 @@
 <body>
     <h1>Payment Form</h1>
     <form>
-        <p> 
-            Required feilds are marked by <u>*</u>
-        </p>
-        <p>
+        <p> Required fields are marked by * <br>
+        </p>    
         <h2>Contact Information</h2>
         <input
         type="radio"
@@ -43,8 +41,8 @@
         value="Mx."
         />&nbsp;Mx.<br 
         />
-    </p>
-    <p>
+    <br>
+    
         <label for="Name">Name:* </label>
           <input 
           id="Name"
@@ -53,8 +51,8 @@
           placeholder="Name"
           required
           />
-    </p>
-    <p>
+    <br><br>
+    
         <label for="Email">Email:* </label>
           <input 
           id="Email"
@@ -63,7 +61,7 @@
           placeholder="Email"
           required
           />
-    </p>
+    <br>
     <h2>Payment Information</h2>
     <label for="Card Type">Card Type:</label>
     <select name="Card Type" id="Card Type">
@@ -72,7 +70,7 @@
         <option value="american-express">American Express</option>
         <option value="discover">Discover</option>
     </select>
-    <p>
+    <br><br>
         <label for="Card Number">Card Number:* </label>
         <input
         id="Number"
@@ -81,8 +79,7 @@
         placeholder="xxxx xxxx xxxx xxxx"
         required
         />
-    </p>
-    <p>
+    <br><br>
         <label for="Exp Date">Expiration Date (MM/YY):*</label>
         <input  
         id="Expiration Date"
@@ -91,8 +88,8 @@
         placeholder="mm/yy"
         required
         />
-    </p>
-    <button type="submit" >Submit Payment</button>
+    <br><br>
+    <button name="submit" type="submit" value="value">Submit Payment</button>
     </form>
 </body>
 </html>

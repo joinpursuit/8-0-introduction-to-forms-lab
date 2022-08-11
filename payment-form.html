@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Payment Form</title>
+    </head>
+    <body>
+        <h1>Payment Form</h1>
+
+        <form>
+
+        <p>Required fields are marked by <u>*</u></p>
+
+        
+
+            <h2>Contact Information</h2>
+
+           <input 
+           type="radio"
+           id="Mr."
+           name="Mr."
+           value="Mr."
+           checked
+           />&nbsp;Mr.<br /> 
+           <input 
+           type="radio"
+           id="Ms."
+           name="Ms."
+           value="Ms."
+           />&nbsp;Ms.<br /> 
+           <input 
+           type="radio"
+           id="Mrs."
+           name="Mrs."
+           value="Mrs."
+           />&nbsp;Mrs.<br /> 
+           <input 
+           type="radio"
+           id="Mx."
+           name="Mx."
+           value="Mx."
+           />&nbsp;Mx.<br /> 
+            <br>
+           <label for="fname">Name:* </label>
+           <input id="fname" type="text" name="fname" placeholder="Name" required/>
+           <br>
+           <br>
+           <label for="email">Email:* </label>
+           <input form="email" type="email" name="email" placeholder="Email" required/>
+           <br>
+           <h2>Payment Information</h2>
+           <label for="cards">Card Type:</label>
+           <select name="cards" id="cards" placeholder="visa" required>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american-express">American Express</option>
+            <option value="discover">Discover</option>
+           </select>
+           <br>
+           <br>
+           <label for="card-number">Card Number:*</label>
+           <input id="card-number" type="number" name="card-number" placeholder="xxxx xxxx xxxx xxxx" required/>
+           <br>
+           <br>
+           <label for="expiration-date">Expiration Date (MM/YY):*</label>
+           <input form="expiration-date" type="text" name="expiration-date" placeholder="mm/yy" required/>
+           <br>
+           <br>
+           <input type="submit" value="Submit Payment" disabled />
+        </form>
+
+    </body>

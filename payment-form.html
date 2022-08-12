@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Payment Form</h1>
+
+   <p>Required fields are marked by *</p>
+    <br />
+    <h2>Contact Information</h2>
+
+    <form id="contact-info">
+      <input type="radio" name="choose" id="public" value="Mr." checked="true"/>
+      <label for="Mr.">Mr.</label>
+      <br />
+      <input type="radio" name="choose" id="public" value="Ms." />
+      <label for="Ms.">Ms.</label>
+      <br />
+      <input type="radio" name="choose" id="public" value="Mrs." />
+      <label for="Mrs.">Mrs.</label>
+      <br />
+      <input type="radio" name="choose" id="public" value="Mx." />
+      <label for="Mx.">Mx.</label>
+      <br />
+        <br/>
+      <label
+        >Name:*
+        <input
+        id="name"
+        name="full-name"
+        type="text"
+        placeholder="Name"
+        required
+        title="Must be filled."
+      />
+      <br/>
+      <br/>
+      <label
+      >Email:*
+      <input
+      id="email"
+      name="email-address"
+      type="email"
+      placeholder="Email"
+      required
+      title="Must be filled."
+    />
+    <br/>
+    <br/>
+    <h2>Payment Information</h2>
+    <br/>
+    <label
+>Card Type:
+<select name="" id="card-type">
+    <option value="visa">Visa</option>
+    <option value="mastercard">Mastercard</option>
+    <option value="american-express">American Express</option>
+    <option value="discover">Discover</option>
+</select>
+<br/>
+<br/>
+<label
+      >Card Number:*
+      <input
+      id="email"
+      name="email-address"
+      type="tel"
+      placeholder="xxxx xxxx xxxx xxxx"
+      required
+      title="Must be filled."
+    />
+</label>
+<br/>
+<br/>
+<label
+      >Expiration Date (MM/YY):*
+      <input
+      id="email"
+      name="email-address"
+      type="text"
+      placeholder="mm/yy"
+      required
+      title="Must be filled."
+    />
+</label>
+<br/>
+<br/>
+<input type="submit" value="Submit Payment"
+    </form>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+
+    <form>
+      <h2>Contact Information</h2>
+
+      <!-- CAMPO DE TEXTO -->
+      <div>
+        <div>
+          <input name="gender" value="MR" type="radio" checked /> <!-- whit checked we can control the select function in the first element -->
+          <label>Mr.</label>
+        </div>
+
+        <div>
+          <input name="gender" value="MS" type="radio" />
+          <label>Ms.</label>
+        </div>
+
+        <div>
+          <input name="gender" value="MRS" type="radio" />
+          <label>Mrs.</label>
+        </div>
+
+        <div>
+          <input name="gender" value="MX" type="radio" />
+          <label>Mx.</label>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label>Name:*</label>
+          <input type="text" placeholder="Name" required />
+        </div>
+        <div>
+          <label>Email:*</label>
+          <input type="email" placeholder="Email" required/>
+          <!-- I have pushed type -->
+        </div>
+      </div>
+
+      <h2>Payment Information</h2>
+      <div>
+        <div>
+          <label>Card Type:</label>
+          <select>
+            <option value="visa" >Visa</option>
+            <option value="mastercard" >Mastercard</option>
+            <option value="american-express" >American Express</option>
+            <option value="discover" >Discover</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Card Number:*</label>
+          <input placeholder='xxxx xxxx xxxx xxxx' type="number" required/>
+        </div>
+
+        <div>
+          <label>Expedition Date (MM/YY):*</label>
+          <input placeholder="mm/yy" type="text" required/>
+        </div>
+      </div>
+
+      <!-- BOTÓN -->
+      <input type="submit" value="Submit Payment" />
+    </form>
+  </body>
+</html>

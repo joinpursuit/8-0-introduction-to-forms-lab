@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Payment Form</h1>
+<p>Required fields are marked by *</p>
+<br/>
+<h2>Contact Information</h2>
+<form>
+    
+    <!-- SOURCE FOR  RADIO BUTTONS :https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+        <div>
+          <input type="radio" id="Mr" name="drone" value="Mr."
+                 checked>
+          <label for="Mr">Mr.</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="Ms" name="drone" value="Ms.">
+          <label for="Ms">Ms.</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="Mrs" name="drone" value="Mrs.">
+          <label for="Mrs">Mrs.</label>
+        </div>
+        <div>
+            <input type="radio" id="Mx." name="drone" value="Mx.">
+            <label for="Mx.">Mx.</label>
+          </div>
+
+
+          <!-- SOURCE FOR NAME AND EMAIL https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form           -->
+          
+          <div class="form-exampleee">
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+          </div>
+          <div class="form-exampleee">
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+          </div>
+
+
+
+    <h2>Payment Information</h2>
+    <label for="card-select">Card Type:</label>
+
+    <select name="cards" id="card-select">
+     
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+        
+    </select>
+
+    
+    <div class="form-example7">
+        <label for="name">Card Number:</label>
+        <input type="tel" name="name" id="name" placeholder="xxxx xxxx xxxx xxxx" required>
+      </div>
+      <div class="form-example8">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+      </div>
+      <div class="form-example9">
+        <label for="name">Epiration Date (MM/YY):*: </label>
+        <input type="text" name="name" id="name" placeholder="mm/yy" required>
+      </div>
+
+          <div class="form-example1212">
+            <input type="submit" value="Submit Payment">
+          </div>
+
+
+
+
+
+
+
+</form>
+
+</body>
+</html>

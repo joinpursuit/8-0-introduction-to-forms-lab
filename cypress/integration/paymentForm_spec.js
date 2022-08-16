@@ -49,7 +49,7 @@ describe("Payment Form", () => {
           if (index === $list.length - 1) {
             cy.wrap($el).should("be.checked");
           } else {
-            cy.wrap($el).not("be.checked");
+            cy.wrap($el).should("not.be.checked");
           }
         });
       });

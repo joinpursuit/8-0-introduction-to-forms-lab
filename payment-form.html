@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Lab</title>
+</head>
+<body>
+  <form>
+  <fieldset>
+    <h1> Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <h2>Contact Information</h2>
+    <div class="control">
+  <label class="radio">
+    <input type="radio" name="preferred"checked>
+    Mr.
+  </label>
+  <br /><label class="radio">
+    <input type="radio" name="preferred" >
+    Ms.
+  </label>
+  <br /><label class="radio">
+    <input type="radio" name="preferred">
+    Mrs.
+    <br /><label class="radio">
+    <input type="radio" name="preferred">
+    Mx.
+</div>
+
+<br />
+    <label for="fname"> Name:*
+        
+    </label>
+    <input type="text" placeholder="name" />
+
+<br />
+    <label for="mail"> Email:*
+        
+    </label>
+    <input type="text" placeholder="email" />
+
+
+
+<h2>Payment Information</h2>
+ <label for="credit">Card Type:</label>
+
+<select name="credit" id="cards">
+  <option value="visa">Visa</option>
+  <option value="mastercard">Mastercard</option>
+  <option value="american-express">American Express</option>
+  <option value="discover">Discover</option>
+</select>
+
+<label for="ccn">Card Number:*</label>
+<input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+  <label for="date"> Expiration Date (MM/YY):*
+        
+    </label>
+    
+  <input 
+    type="text"
+    pattern="(?:0[1-9]|1[0-2])/[0-9]{2}"
+    title="Enter a date in this format MM/YY"
+    placeholder="mm/yy"
+  />
+
+  
+
+<br />
+  <div>
+    <input type="submit" value="Submit Payment">
+  </div>
+</form>
+</fieldset>
+</body>
+
+
+</html>

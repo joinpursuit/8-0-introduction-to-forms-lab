@@ -1,0 +1,65 @@
+<html>
+    <body style="background-color:goldenrod;">
+        <h1 style="color:whitesmoke;">C.S Drafting Services Payment Form</h1>
+        <p>Requiered fields are maked by <u>*</u></p>
+        <h2>Contact Information</h2>
+
+        <label>
+            Mr.
+            <input id="Mr." name="Contact Information" type="radio" value="Mr." />
+           </label>
+        <label>
+            Ms.
+            <input id="Mr." name="Contact Information" type="radio" value="Mr." />
+           </label>
+        <label>
+            Mrs.
+            <input id="Mr." name="Contact Information" type="radio" value="Mr." />
+           </label>
+        <label>
+            Mx.
+            <input id="Mr." name="Contact Information" type="radio" value="Mr." />
+           </label>
+
+        <form>
+            <label for ="placeholder">Name</label>
+            <input type="text" placeholder="Your Name please..." required />
+            <button type="submit">Click me to submit</button>
+        </form>
+        <form>
+            <label for ="placeholderEmail">E-mail</label>
+            <input type="text" placeholder="Your E-mail please..." required />
+            <button type="submit">Click me to submit</button>
+        </form>
+
+        <h2>Payment Information (We promise it's safe)
+            <meta charset="UTF-8">
+            </head>
+            <body>
+            <p>&#128512;</p>
+            </body>
+        </h2>
+
+        <label>
+            Card Issuer:
+            <select id="Card-Issuer" name ="CardType">
+            <option>-- Select Card Issuer --</option>
+            <option value="Visa">Visa</option>
+            <option value="Amex">Amex</option>
+            <option value="Master Card">Master Card</option>
+            <option value="Discover">Discover</option>
+        </select>
+        </label>
+        <form>
+            <label for ="Card Number">Card Number. *</label>
+            <input type="tel" id="Card Number" name="Card Number"placeholder="xxxx-xxxx-xxxx-xxxx" required />
+        </form>
+        <form>
+            <label for ="placeholderExpDate">Exp Date. (MM/YY): *</label>
+            <input type="text" placeholder="Card Number Pleas..." required />
+        </form>
+        
+        <input type="submit" value="Submit Payment" />
+        
+    </body>
+</html>

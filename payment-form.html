@@ -6,19 +6,19 @@
 
         <label>
             Mr.
-            <input id="Mr." name="Contact Information" type="radio" value="Mr." />
+            <input id="Mr." name="Contact Information" type="radio" value="Mr." required />
            </label>
         <label>
             Ms.
-            <input id="Mr." name="Contact Information" type="radio" value="Mr." />
+            <input id="Mr." name="Contact Information" type="radio" value="Mr." required />
            </label>
         <label>
             Mrs.
-            <input id="Mr." name="Contact Information" type="radio" value="Mr." />
+            <input id="Mr." name="Contact Information" type="radio" value="Mr." required />
            </label>
         <label>
             Mx.
-            <input id="Mr." name="Contact Information" type="radio" value="Mr." />
+            <input id="Mr." name="Contact Information" type="radio" value="Mr." required />
            </label>
 
         <form>
@@ -35,19 +35,17 @@
         <h2>Payment Information (We promise it's safe)
             <meta charset="UTF-8">
             </head>
-            <body>
             <p>&#128512;</p>
-            </body>
         </h2>
 
         <label>
             Card Issuer:
-            <select id="Card-Issuer" name ="CardType">
+            <select id="Card-Issuer" name ="Card-Type">
             <option>-- Select Card Issuer --</option>
-            <option value="Visa">Visa</option>
-            <option value="Amex">Amex</option>
-            <option value="Master Card">Master Card</option>
-            <option value="Discover">Discover</option>
+            <option value="visa">Visa</option>
+            <option value="american-express">American-Express</option>
+            <option value="master Card">Mastercard</option>
+            <option value="discover">Discover</option>
         </select>
         </label>
         <form>
@@ -58,8 +56,12 @@
             <label for ="placeholderExpDate">Exp Date. (MM/YY): *</label>
             <input type="text" placeholder="Card Number Pleas..." required />
         </form>
-        
-        <input type="submit" value="Submit Payment" />
+
+    
+        <form>
+            <input type="submit" value="Submit Payment" />
+        </form>
+      
         
     </body>
 </html>

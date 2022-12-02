@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <body>
+        <form>
+        <h1>Payment Form</h1>
+        <p>Required fields are marked by <u>*</u></p>
+        <h2>Contact Information</h2>
+        <label>
+            Mr.
+            <input id="public" name="visibility" type="radio" value="public" checked/>
+          </label>
+          <br>
+          <label>
+            Ms.
+            <input id="public" name="visibility" type="radio" value="public" />
+          </label>
+          <br>
+          <label>
+            Mrs.
+            <input id="public" name="visibility" type="radio" value="public" />
+          </label>
+          <br>
+          <label>
+            Mx.
+            <input id="public" name="visibility" type="radio" value="public" />
+            <br>
+            <br>
+            <label for="person name">Name:*</label>
+            <input id="person name" name="name" type="text" placeholder="Name" required/>
+            <br>
+            <br>
+            <label for="person email">Email:*</label>
+            <input id="person email" name="Email" type="email" placeholder="Email" required/>
+
+        <h2>Payment Information</h2>
+        <label>
+            Card Type
+            <select id="Card Type" name="category">
+    
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="american-express">American Express</option>
+              <option value="discover">Discover</option>
+            </select>
+        </label>
+            <br>
+            <br>
+            <label for="person card">Card Number:*</label>
+            <input id="person card" name="name" type="tel" placeholder="xxxx xxxx xxxx xxxx"  required/>
+            <br>
+            <br>
+            <label for="card expiration">Expiration Date (MM/YY):*</label>
+            <input id="person email" name="Email" type="text" placeholder="mm/yy" required/>
+            <br>
+            <br>
+            <input type="submit" value="Submit Payment" />
+        </form>
+    </body>
+</head>

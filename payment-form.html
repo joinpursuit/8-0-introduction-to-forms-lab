@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang = "en">
-    <head>
+ <!DOCTYPE html>
+ <html lang = "en">
+     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             Introduction to Forms Lab -- Payment Form
         </title>
-    </head>
-    <body>
+     </head>
+     <body>
         <h1>Payment Form</h1>
-        <p>Required fields are marked by * </p>
+        <p>Required fields are marked by *</p>
         <form action="">
             <h2>Contact Information</h2>
             <label>
@@ -35,18 +35,22 @@
             <label for="email">Email:*</label>
             <input type="email" name="email" id="email" placeholder = "Email" required />
             <h2>Payment Information</h2> <br />
+
             <label for="cardPayment">Card Type:</label>
+
             <select name="paymentType" id="cardPayment">
                 <option value="visa">Visa</option>
                 <option value="mastercard">Mastercard</option>
                 <option value="american-express">American Express</option>
                 <option value="discover">Discover</option>
             </select> <br /> <br />
-            <label for="cardNumber">Card Number: *</label>
+
+            <label for="cardNumber">Card Number:*</label>
             <input type="tel" name="number" id="cardNumber" placeholder = "xxxx xxxx xxxx xxxx" required /> <br /> <br />
-            <label for="expDate">Expiration Date (MM/YY): *</label>
-            <input type="text" name="expDate" id="expDate" placeholder = "mm/yy" required /> <br /> <br />
+            <label for="expDate">Expiration Date (MM/YY):*</label>
+            <input type="text" name="eDate" id="expDate" placeholder = "mm/yy" required /> <br /> <br />
             <input type="submit" name = "submit" id = "submit" value="Submit Payment" /> <br /> <br />
-        </form>
-    </body>
-</html>
+
+         </form>
+     </body>
+ </html>

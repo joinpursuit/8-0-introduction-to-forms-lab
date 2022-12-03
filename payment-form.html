@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Lab</title>
+</head>
+
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+    <h2>Contact Information</h2>
+    <form>
+
+        <label>
+            Mr.
+            <input id="Mr" name="visibility" type="radio" value="Mr" checked />
+        </label>
+        <hr>
+        Ms.
+        <input id="Ms" name="visibility" type="radio" value="Ms" />
+        </label>
+        <hr>
+        Mrs.
+        <input id="Mrs" name="visibility" type="radio" value="Mrs" />
+        </label>
+        <hr>
+        Mx.
+        <input id="Mx" name="visibility" type="radio" value="Mx" />
+        </label>
+        <hr>
+        <label for="Name">
+            Name:*
+            <input id="Name" name="Name" placeholder="Name" type="text" required />
+        </label>
+        <hr>
+        <label for="Email">
+            Email:*
+            <input name="Email" type="email" id="Email" placeholder="Email" required />
+        </label>
+        <h2>Payment Information</h2>
+        <label for="Card Type">Choose a card Tyoe:</label>
+            <select id="Card Type" name="Choose Card type" required>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+        </label>
+        <hr>
+        <label for="Card Number">
+            Card Number:*
+            <input id="Card Number" name="Card Number" placeholder="Card Number" type="text" required />
+        </label>
+        <hr>
+        <label for="Credit Card">
+           Credit Card
+            <input id="Credit Card" name="Credit Card" placeholder="xxxx xxxx xxxx xxxx" type="text" required />
+        </label>
+         <hr>
+        <label for="Expiration Date">
+            Expiration Date (MM/YY):*
+            <input id="Expiration Date" name="Expiration Date" placeholder="mm/yy" type="text" required />
+        </label>
+        <hr>
+        <input type="submit" value="Submit Payment" />
+
+    </form>
+</body>
+
+</html>

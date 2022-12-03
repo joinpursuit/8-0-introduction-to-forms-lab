@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Payment Form</title>
+    </head>
+    <body>
+        <h1>Payment Form</h1>
+
+        <p>Required fields are marked by *</p>
+
+        <h2>Contact Information</h2>
+
+        <form>
+            <label>
+                <input type="radio" name="suffix" id="suffix" checked />
+                Mr.
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="suffix" id="suffix" />
+                Ms.
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="suffix" id="suffix" />
+                Mrs.
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="suffix" id="suffix" />
+                Mx.
+            </label>
+            <br>
+            <br>
+            <label for="name">Name:*</label>
+            <input type="text" name="name" id="name" placeholder="Name" required />
+            <br>
+            <br>
+            <label for="email">Email:*</label>
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            <br>
+            <h2>Payment Information</h2>
+            <br>
+            <label>
+                Card Type:
+                <select name="cardType" id="cardType">
+                    <option value="visa">-- Visa --</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label for="cardNumber">Card Number:*</label>
+            <input type="tel" name="cardNumber" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required />
+            <br>
+            <br>
+            <label for="expDate">Expiration Date(MM/YY):*</label>
+            <input type="text" name="expDate" id="expDate" placeholder="mm/yy" required />
+            <br>
+            <input type="submit" name="submit" id="submit" value="Submit Payment">
+            <!-- <button type="submit">Submit Payment</button> -->
+
+
+        </form>
+    </body>
+</html>

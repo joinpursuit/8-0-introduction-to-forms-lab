@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p>
+    <h2>Contact Information</h2>
+    <form>
+            <input id = "pre-mr" name = "prefix" type = "radio" value = "mr"  checked />
+            <label for = "pre-mr">
+                Mr.
+            </label>
+            <br>
+            <input id = "pre-ms" name = "prefix" type = "radio" value = "ms" />
+            <label for = "pre-ms">
+                Ms.
+            </label>
+            <br>
+            <input id = "pre-mrs" name = "prefix" type = "radio" value = "mrs" />
+            <label for = "pre-mrs">
+                Mrs.
+            </label>
+            <br>
+            <input id = "pre-mx" name = "prefix" type = "radio" value = "mx" />
+            <label for = "pre-mx">
+                Mx.
+            </label>
+            <br>
+        </label>
+    <br>
+        <label for = "name-input">Name:*</label>
+        <input id = "name-input" name="input-name" type = "text" required placeholder = "Name" />
+    <br>
+        <label for = "email-input">Email:*</label>
+        <input id = "email-input" name="input-email" type = "email" required placeholder = "Email" />
+    <h2>
+        Payment Information
+    </h2>
+    <br>
+        <label>
+            Card Type:
+            <select id="card-type" name="card-type">
+                <option value = "visa">Visa</option>
+                <option value = "mastercard">Mastercard</option>
+                <option value = "american-express">American Express</option>
+                <option value = "discover">Discover</option>
+            </select>
+        </label>
+
+    <br>
+        <label for = "card-number-input">Card Number:*</label>
+        <input id = "card-number-input" name="input-card-number" type = "tel" required placeholder = "xxxx xxxx xxxx xxxx" />
+    <br>
+        <label for = "expiration-date-input">Expiration Date (MM/YY):*</label>
+        <input id = "expiration-date-input" name="input-expiration-date" type = "text" required placeholder = "mm/yy" />
+    <br>
+        <input type = "submit" value = "Submit Payment" />
+    </form>
+    
+    
+</body>
+</html>

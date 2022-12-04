@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form einstein</title>
+</head>
+<body>
+    
+<h1>Payment Form</h1>
+<p>Required fields are marked by *</p>
+<form>
+    <h2>Contact Information</h2>
+<label for="title"></label>
+
+<label>
+    Title
+
+<!--When a radio button is clicked, the other radio buttons should be de-selected.-->
+    <BR>
+    <input type="radio" id="mrs" name="mrs" value="Mrs" checked>
+    <label for="Mrs">Mrs.</label><br>
+    <input type="radio" id="mx" name="mx" value="Mx">
+        <label for="Mx">Mx.</label><br>
+    <input type="radio" id="Ms" name="Ms" value="Ms">
+           <label for="Ms">Ms.</label><br>
+    <input type="radio" id="Mr" name="Mr" value="Mr">
+        <label for="Mr">Mr.</label><br>
+<BR>    
+
+<!-- The Name field should be a text input and have a placeholder of `Name` -->
+
+    <label for="name">Name*</label>
+    <input id="name" name="name" type="text" placeholder="Name" required/>
+
+<!--The Email field should be an email input and have a placeholder of `Email`.-->
+<BR>
+<label for="email">Email*</label>
+    <input id="email" name="email" type="email" placeholder="Email" required/>
+
+
+<h2>Payment Information</h2>
+
+<!--     The Dropdown should include four options: "Visa", "Mastercard", "American Express", and "Discover".
+     The Dropdown option's values should be "visa", "mastercard", "american-express", and "discover".
+-->
+<label for="cardType">Card Type
+  
+    <select name="paymentTypes" id="paymentTypes">
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+      </select>
+</label>
+<BR>
+
+    
+<!--The Credit Card field should be a `tel` type and have a placeholder of "xxxx xxxx xxxx xxxx".-->
+<label for="creditCard">Card Number*</label>
+    <input id="creditCard" name="creditCard" type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
+
+<BR>
+<!--The Expiration Date field should be a `text` type and should have a placeholder of "mm/yy".-->
+
+<label for="expirationDate">Expiration Date:*</label>
+<input name="expirationDate" id="expirationDate" type="text" placeholder="mm/yy" required/>
+<BR>
+
+<!-- Your submit button should be an `input` element. -->
+<input type="submit" value="Submit Payment" />
+
+
+</form>
+
+</body>
+</html>

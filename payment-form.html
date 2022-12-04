@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+        <h1>Payment Form</h1>
+
+        <p>Required fields are marked by <em>*</em></p>
+
+        <h2>Contact Information</h2>
+    <form>
+        <input id="contact-prefix" name="prefix" type="radio" value="mr." checked/>Mr.</label>
+        <br>
+        <input id="contact-prefix" name="prefix" type="radio" value="ms."/>Ms.</label>
+        <br>
+        <input id="contact-prefix" name="prefix" type="radio" value="mrs."/>Mrs.</label>
+        <br>
+        <input id="contact-prefix" name="prefix" type="radio" value="mx."/>Mx.</label>
+        <br><br>
+
+       <label>Name:*</label>
+        <input type="text" id="contact-name" name="Name" placeholder="Name" required>
+        <br><br>
+
+       <label>Email:*</label>
+        <input type="email" id="contact-email" name="Email" placeholder="Email" required>
+        <br><br>
+
+        <h2>Payment Information</h2>
+        <!-- <form name="Payment Information" id="payment-info" action="/action_page.php"> -->
+        Card Type:
+        <select id="card-info" name="Credit Card">
+          <option value="visa" selected>Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="american-express">American Express</option>
+          <option value="discover">Discover</option>
+        </select>
+        <br><br>
+    
+        <label>Card Number:*</label>
+        <input id="card-num" type="number" placeholder="xxxx xxxx xxxx xxxx" required>
+       
+
+       </label>Expiration Date (MM/YY):*</label>
+        <input id="card-exp" type="text" placeholder="mm/yy" required>
+        <br><br>
+
+        <input type="submit" value="Submit Payment">
+
+    </form>
+</body>
+</html>

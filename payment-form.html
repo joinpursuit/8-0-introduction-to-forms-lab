@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Payment Form</h1>
+    <form>
+        <p>Required fields are marked by <u>*</u></p>
+    </form>
+    <br>
+    <h2>Contact Information</h2>
+    <label>
+        <input id="Mr." name="visibility" type="radio" value="Mr." checked />
+        Mr.
+        <br>
+        <input id="Ms." name="visibility" type="radio" value="Ms." />
+        Ms.
+        <br>
+        <input id="Mrs." name="visibility" type="radio" value="Mrs." />
+        Mrs.
+        <br>
+        <input id="Mx." name="visibility" type="radio" value="Mx." />
+        Mx.
+    </label>
+    <br><br>
+    <label for="post-title">Name:*</label>
+    <input id="post-title" name="title" type="text" placeholder="Name" required />
+    <br><br>
+    <label for="post-title">Email:*</label>
+    <input id="post-title" name="title" type="email" placeholder="Email" required/>
+    <h2>Payment Information</h2>
+    <label>
+        Card Type
+        <select id="post-category" name="category">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american-express">American Express</option>
+            <option value="discover">Discover</option>
+        </select>
+        <br><br>
+    </label>
+    <label for="post-title">Card Number:*</label>
+    <input id="post-title" name="Card Number*" type="text" placeholder="xxxx xxxx xxxx xxxx" required/>
+<br><br>
+    <label for="post-title">Expiration Date (MM/YY):*</label>
+    <input id="post-title" name="Expiration Date (MM/YY)" type="text" placeholder="mm/yy" required />
+    <br><br>
+    <input type="submit" value="Submit Payment" />
+</body>
+
+</html>

@@ -12,7 +12,7 @@
        <p>Required fields are marked by</p>
 
        <h2>Contact Information</h2>
-        <label><input id="mr" name="prefix" type="radio" value="mr"/>Mr.</label>
+        <label><input id="mr" name="prefix" type="radio" value="mr" checked/>Mr.</label>
         <br> 
         <label><input id="ms" name="prefix" type="radio" value="ms"/>Ms.</label>
         <br> 
@@ -21,23 +21,26 @@
         <label><input id="mx" name="prefix" type="radio" value="mx"/>Mx.</label> 
         <br>
         <br>
-        <label for="name">Name:*</label><input id="preferred" placeholder="Name"/>
+        <label for="name">Name:*</label><input id="preferred" type="text" name="name" placeholder="Name" required/>
         <br>
         <br>
-        <label for="email">Email:*</label><input id="last-name" placeholder="Email"/>
+        <label for="email">Email:*</label><input id="emailaddress" type="email" name="email" placeholder="Email" required/>
         
     <h2>Payment Information</h2>
     <label> Card Type:</label>
     <select id="card type" name="card type">
         <option value="visa">Visa</option>
-        <option value="master">Master</option>
-        <option value="visa">American Express</option>
-        <option value="discovrt">Discover</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
     </select>
     <br>
-    <label>Card Number:*<input id="card-number" type="number" value="card-number" placeholder="xxxx xxxx xxxx xxxx"/>
     <br>
-    <label>Expiration Date (MM/YY):*<input id="exp-number" name="exp-date" type="text" placeholder="mm/yy" required/>
+    <label>Card Number:* <input id="card-number" type="number" value="card-number" placeholder="xxxx xxxx xxxx xxxx"/>
+    <br>
+    <br>
+    <label>Expiration Date (MM/YY):* <input id="exp-number" name="exp-date" type="text" placeholder="mm/yy" required/>
+    <br>
     <br>
     <input type="submit" value="Submit Payment"/>
     </form>

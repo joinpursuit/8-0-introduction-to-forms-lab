@@ -35,9 +35,11 @@
         <option value="discovrt">Discover</option>
     </select>
     <br>
-    <label>Card Number:*<input id="card-number"</label>
-    </form>
+    <label>Card Number:*<input id="card-number" type="number" value="card-number" placeholder="xxxx xxxx xxxx xxxx"/>
     <br>
-    <button>Submit Payment</button>
+    <label>Expiration Date (MM/YY):*<input id="exp-number" name="exp-date" type="text" placeholder="mm/yy" required/>
+    <br>
+    <input type="submit" value="Submit Payment"/>
+    </form>
 </body>
 </html>

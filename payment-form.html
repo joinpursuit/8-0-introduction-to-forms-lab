@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Forms Demo</title>
+        </head>
+        <body>
+          <h1>Payment Forms</h1>
+          <br>
+          <p>Required fields are marked by *</p>
+          <br>
+          <h2>>Contact Information</h2>
+          <form>
+            <label>
+                <input id="title" name="visibility" type="radio" value="title" checked />Mr.
+                <input id="title" name="visibility" type="radio" value="title" />Ms.
+                <input id="title" name="visibility" type="radio" value="title" />Mrs.
+                <input id="title" name="visibility" type="radio" value="title" />Mx.   
+             </label>
+             <br>
+             <label>Name</label>
+                <input id="name" name="name" type="text" placeholder="Name" required/>
+            <label>Email</label>
+                <input id="email" name="email" type="email" placeholder="Email" required/>
+            <br>
+
+            <h2>Payment Information</h2>
+            <br>
+            <label>
+                Card Type
+                <select id="credit-type" name="credit-type">
+                  <option value="visa">Visa</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="american-express">American Express</option>
+                  <option value="discover">Discover</option>
+                </select>
+            </label>
+
+            <label>Credit Card</label>
+                <input id="card-number" name="card-number" type="tel" placeholder="xxxx xxxx xxxx xxxx" required>
+
+            <label>Expiration Date (MM/YY)</label>
+                <input id="card-expiration" name="card-expiration" type="text" placeholder="mm/yy" required>
+
+            <br><br>
+            <input type="submit" value="Submit Payment" />
+          </form>
+          
+         
+
+
+
+
+
+</html>

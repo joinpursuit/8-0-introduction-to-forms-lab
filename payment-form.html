@@ -8,22 +8,22 @@
         <p>Required fields are marked by <u>*</u></p>
         <h2>Contact Information</h2>
         <label>
-            <input id="mr" name="mr" type="radio" value="mr" checked />
+            <input id="mr" name="prefix" type="radio" value="mr" checked />
             Mr.
         </label>
         <br>
         <label>
-            <input id="ms" name="ms" type="radio" value="ms" />
+            <input id="ms" name="prefix" type="radio" value="ms" />
             Ms.
         </label>
         <br>
         <label>
-            <input id="mrs" name="mrs" type="radio" value="mrs" />
+            <input id="mrs" name="prefix" type="radio" value="mrs" />
             Mrs.
         </label>
         <br>
         <label>
-            <input id="mx" name="mx" type="radio" value="mx" />
+            <input id="mx" name="prefix" type="radio" value="mx" />
             Mx.
         </label>
         <br>
@@ -31,39 +31,39 @@
         <form>
             <label for="name">
                 Name:*
-                <input id="name" name="name" type="text">
+                <input id="name" name="name" type="text" placeholder="Name" required>
             </label>
-        </form>
+        
         <br>
-        <form>
+        
             <label for="email">
                 Email:*
-                <input id="email" name="email" type="text">
+                <input id="email" name="email" type="email" placeholder="Email" required>
             </label>
-        </form>
+        
         <h2>Payment Information</h2>
         <label>
             Card Type:
             <select id="post-category" name="category">
               <option value="visa">Visa</option>
-              <option value="mastercard">MasterCard</option>
+              <option value="mastercard">Mastercard</option>
               <option value="american-express">American Express</option>
               <option value="discover">Discover</option>
             </select>
         </label>
         <br>
         <br>
-        <form>
+        
             <label for="card-number">
                 Card Number:*
-                <input id="card-number" name="card-number" type="tel">
+                <input id="card-number" name="card-number" type="tel" placeholder="xxxx xxxx xxxx xxxx" required>
             </label>
-        </form>
+        
         <br>
-        <form>
+        
             <label for="exp-date">
                 Expiration Date (MM/YY):*
-                <input id="exp-date" name="exp-date" type="text">
+                <input id="exp-date" name="exp-date" type="text" placeholder="mm/yy" required>
             </label>
         </form>
         <br>

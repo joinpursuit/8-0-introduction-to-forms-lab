@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <form>
+    <h1>Payment Form</h1>
+    <br>
+    <p>Required fields are marked by *</p>
+   
+    <h2>Contact Information</h2>
+
+    
+   
+    
+    
+    <input name="Mr." type="radio" id="Mr." checked/>
+    <label>Mr.</label>
+    <br>
+   
+    <input name="Mx." type="radio" id="Mx."/>
+    <label>Mx.</label>
+    <br>
+   
+    <input name="Ms." type="radio" id="Ms."/>
+    <label>Ms.</label>
+    <br>
+   
+    <input name="Mrs." type="radio" id="Mrs."/>
+    <label>Mrs.</label>
+    <br>
+    <br>
+    <label for="aname">Name*</label>
+    <input type="text" placeholder="Name" required/>
+    <br>
+    <br>
+    <label for="email">Email*</label>
+    <input type="email" placeholder="Email" required />
+    <br>
+    
+    <h2>Payment Information</h2>
+    <label>Card Type</label>
+
+    <select>
+    <option value="visa">Visa</option>  
+    <option value="mastercard">Mastercard</option>
+    <option value="american-express">American Express</option>
+    <option value="discover">Discover</option>
+    </select>
+</label>
+    <br>
+    <br>
+    <label for="card number">Card Number*</label>
+    
+    <!-- <input type="text" id="card number" name="card number" placeholder="Card Number" required/> -->
+    <!-- <label for="card number">Card Number</label> -->
+  
+    <input placeholder="xxxx xxxx xxxx xxxx" type="tel" required />
+    <br>
+    <br>
+    <label for="expiration date">Expiration Date</label>
+    <label for="mm/yy">(MM/YY)*</label>
+    <input placeholder="mm/yy" type="text" required />
+    <br>
+    <br>
+    <input type="submit" value="Submit Payment" />
+    <!-- <button type="submit">Submit Payment</button> -->
+
+     <!-- This is how comments are written in HTML -->
+    </form>
+  </body>
+</html>

@@ -4,19 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Forrm</title>
+    <title>Payment Form</title>
 </head>
 <body>
     <h1>Payment Form</h1>
-    <p>Required fields are marked <u>*</u></p>
+    <p>Required fields are marked by *</p>
 
     <h2>Contact Information</h2>
     <form>
-        <label> <input type="radio" /> Mr. </label> <br>
-        <label> <input type="radio" /> Mrs. </label> <br>
-        <label> <input type="radio" /> Ms. </label> <br>
-        <label> <input type="radio" /> Mx. </label> <br>
+        <label> <input type="radio"  name="name" id="name" checked/> Mr. 
+        </label> <br>
+        <label> <input type="radio"  name="name" id="name" /> Mrs. </label> <br>
+        <label> <input type="radio"  name="name" id="name" /> Ms. </label> <br>
+        <label> <input type="radio"  name="name" id="name" /> Mx. </label> <br>
+    <br>
+    <label>
+        Name:* <input type="text" name="name" placeholder="Name" required />
+
+    </label>
+
+    <br>
+
+    <label>
+
+        Email:* 
+        <input type="email" name="email" placeholder="Email" required />
+    </label>
+    
+    <h2>Payment Information</h2>
+
+    <label for="payment"> Card Type:</label>
+    
+    <select id="payment" name="card type"><br>
+        <br>
         
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+        </select>
+<br>
+
+<label>Credit Card Number:*
+     <input type="text" name="name" placeholder="xxxx xxxx xxxx xxxx" required/>
+
+</label>
+
+<label>Expriration Date (MM/YY):* 
+    <input type="text" name="name" placeholder="mm/yy" required/>
+    </label>
+    <br>
+    <br>
+    <input type="submit" value="Submit Payment" required/>
 
     </form>
 </body>

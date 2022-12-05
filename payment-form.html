@@ -7,9 +7,8 @@
     <title>Payment Form</title>
 </head>
 <body>
-    <form>
-       <h1>Payment Form</h1>
-       <p>Required fields are marked by</p>
+    <h1>Payment Form</h1>
+    <form> <p>Required fields are marked by <u>*</u></p></form>
 
        <h2>Contact Information</h2>
         <label><input id="mr" name="prefix" type="radio" value="mr" checked/>Mr.</label>
@@ -36,13 +35,13 @@
     </select>
     <br>
     <br>
-    <label>Card Number:* <input id="card-number" type="number" value="card-number" placeholder="xxxx xxxx xxxx xxxx"/>
+    <label>Card Number:* <input id="card-number" type="number" value="card-number" placeholder="xxxx xxxx xxxx xxxx"required/>
     <br>
     <br>
     <label>Expiration Date (MM/YY):* <input id="exp-number" name="exp-date" type="text" placeholder="mm/yy" required/>
     <br>
     <br>
     <input type="submit" value="Submit Payment"/>
-    </form>
+    
 </body>
 </html>

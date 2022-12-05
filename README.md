@@ -38,22 +38,22 @@ Make a file `payment-form.html` that displays a form to enter payment informatio
 
 In addition to looking similar to the image above, make sure you meet the following requirements:
 
-- [ ] Your submit button should be an `input` element.
+- [x] Your submit button should be an `input` element.
 
-- [ ] You should have all four radio buttons listed above.
+- [x] You should have all four radio buttons listed above.
 
-- [ ] The first radio button should be checked by default.
+- [x] The first radio button should be checked by default.
 
-- [ ] When a radio button is clicked, the other radio buttons should be de-selected.
+- [x] When a radio button is clicked, the other radio buttons should be de-selected.
 
-- [ ] The Name field should be a text input and have a placeholder of `Name`.
+- [x] The Name field should be a text input and have a placeholder of `Name`.
 
-- [ ] The Email field should be an email input and have a placeholder of `Email`.
+- [x] The Email field should be an email input and have a placeholder of `Email`.
 
-- [ ] The Dropdown should include four options: "Visa", "Mastercard", "American Express", and "Discover".
+- [x] The Dropdown should include four options: "Visa", "Mastercard", "American Express", and "Discover".
 
-- [ ] The Dropdown option's values should be "visa", "mastercard", "american-express", and "discover".
+- [x] The Dropdown option's values should be "visa", "mastercard", "american-express", and "discover".
 
-- [ ] The Credit Card field should be a `tel` type and have a placeholder of "xxxx xxxx xxxx xxxx".
+- [x] The Credit Card field should be a `tel` type and have a placeholder of "xxxx xxxx xxxx xxxx".
 
-- [ ] The Expiration Date field should be a `text` type and should have a placeholder of "mm/yy".
+- [x] The Expiration Date field should be a `text` type and should have a placeholder of "mm/yy".

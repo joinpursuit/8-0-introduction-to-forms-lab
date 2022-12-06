@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <form>
+        <h1>Payment Form</h1>
+        <p>Required fields are marked by <u>*</u></p>
+
+        <h2>Contact Information</h2>
+
+        <label for="Mr">
+            <input type="radio" name="title" id="Mr" value="Mr." checked/>
+            Mr.
+        </label>
+        <br />
+        <label for="Ms">
+            <input type="radio" name="title" id="Ms" value="Ms." />
+            Ms.
+        </label>
+        <br />
+        <label>
+            <input type="radio" name="title" id="Mrs" value="Mrs." />
+            Mrs.
+        </label>
+        <br />
+        <label>
+            <input type="radio" name="title" id="Mx" value="Mx." />
+            Mx.
+        </label>
+        <br />
+        <label for="name">Name:*
+            <input type="text" id="name" placeholder="Name" required />
+        </label>
+        <br />
+        <label for="email">Email:* 
+        <input type="email" id="email" placeholder="Email" required />
+        </label>
+        <h2>Payment Information</h2>
+        <label>Card Type:
+            <select id="category">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+        </label>
+        <br />
+        <label>Card <Number:></Number:>
+            <input type="text" placeholder="xxxx xxxx xxxx xxxx" required />
+        </label>
+        <br />
+        <label>Expiration Date (MM/YY):*
+            <input type="text" placeholder="mm/yy" required />
+        </label>
+        <br />        
+        <input type="submit" value="Submit Payment" />
+    </form>
+</body>
+</html>

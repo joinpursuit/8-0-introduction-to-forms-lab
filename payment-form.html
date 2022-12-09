@@ -1,0 +1,73 @@
+<h1>Payment Form</h1><!-- this is a heading -->
+
+<p>Required fields are marked by <u>*</u></p> 
+<!--line 3 <p> element is for the paragraph, and <u> element underlines-->
+<br><!--line break-->
+<h2>Contact Information</h2>
+
+
+<form> <!--insert form element and everyting put inside
+form will populate this is the OPENING -->
+<input id="" name="Mr." type="radio" checked/> 
+<!--line 9 id is an attribute that "labels the type 
+    see the radio button on the payment form"
+the element type determines what kind of prompt it will be -->
+<label>Mr.</label> <!--line 12 places the Mr. label AFTER
+the radio button-->
+<br>
+
+<input id="" name="Ms." type="radio"/>
+<label>Ms.</label>
+<br>
+
+<input id="" name=""Mrs. type="radio"/>
+<label>Mrs.</label>
+<br>
+
+<input id="" name=""Mx. type="radio"/>
+<label>Mx.</label>
+<br>
+
+<label>Name:*</label> <!--this will enter "Name:*" as the label -->
+<input id="" name="Name" type="text" placeholder="Name" required />
+<!--line 32 sets up an input (prompt box) this is where the person will
+enter their name-->
+<br>
+
+<label>Email:*</label> <!--this will enter "Email:*"" as the label -->
+<input id="" name="Email" type="email" placeholder="Email" required />
+<!--line 38 sets up an input (prompt box) this is where the person will
+enter their name-->
+<br>
+
+<h2>Payment Information</h2>
+
+<label>Card Type:</label> <!--this places a lable in front of the prompt box
+which in lines 47-52 is a select option input!-->
+<select id="" name="Card Types" >
+    <option value="visa" selected>Visa</option>
+    <option value="mastercard">Mastercard</option>
+    <option value="american-express">American Express</option>
+    <option value="discover">Discover</option>
+</select>
+<br>
+
+<label>Card Number:*</label> <!--this element place a label "Card Number:*" in front of the prompt box
+to alert form user what to insert! -->
+<input id="" name="Card Number" type="text" placeholder="xxxx xxxx xxxx xxxx" required/>
+<!--line 57 shows an empty box, the type is text, the element placeholder 
+lets the form and end user now how many characters and format the form is looking
+to be inserted -->
+<br>
+
+<label>Expiration Date (MM/YY):*</label><!--this element place a label "Expiration Date:*" in front of the prompt box
+    to alert form user where to insert the card expiration detals!-->
+<input id="" name="Date" type="text" placeholder="mm/yy" required />
+<!--line 65 is the prompt box, the name is telling the form to organize the
+input information under a date umbrella, the type element is telling the form we its
+looking for text, and the placeholder element is telling the form the format we are looking for
+and the required element determines if that information is required! -->
+<br>
+
+<input type="submit" value="Submit Payment">
+</form>

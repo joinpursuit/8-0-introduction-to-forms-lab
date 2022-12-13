@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Payment Form</title>
+    </head>
+    <body>
+        <h1>Payment Form</h1>
+        <p>Required fields are marked by *</p>
+        <h2>Contact Information</h2> <br>
+        <form>
+            <input type="radio" name="title" id="title1" value="Mr" checked> 
+            <label for="title">Mr.</label> <br>
+
+            <input type="radio" name="title" id="title2" value="Ms."> 
+            <label for="title">Ms.</label> <br>
+
+            <input type="radio" name="title" id="title3" value="Mrs."> 
+            <label for="title">Mrs.</label> <br>
+
+            <input type="radio" name="title" id="title4" value="Mx."> 
+            <label for="title">Mx.</label> <br>
+
+            <label for="name">Name:*</label>
+            <input type="text" name="name" id="name" placeholder="Name" required> <br>
+
+            <label for="email">Email:*</label>
+            <input type="email" name="email" id="email" placeholder="Email" required> <br>
+
+
+        <h2>Payment Information</h2> <br>
+
+
+            <!-- Placeholder for dropdown menu -->
+            <label for="card-type">Card Type:*</label>
+            <select name="card-type" id="card-type">
+                <option value="visa" selected>Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select> <br>
+
+            <label for="card-number">Card Number:*</label>
+            <input type="tel" name="card-number" id="card-number" placeholder="xxxx xxxx xxxx xxxx" required> <br>
+
+            <label for="expiry">Expiration Date (MM/YY):*</label>
+            <input type="text" name="expiry" id="expiry" placeholder="mm/yy" required> <br>
+
+            <input type="submit" value="Submit Payment">
+        </form>
+    
+    </body>
+</html>

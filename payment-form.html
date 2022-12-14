@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title><h1>Payment lab</h1></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by <u>*</u></p> 
+    <h2>Contact Information</h2>
+    <form>
+        <label>Mr.
+            <input id="Mr" name="visibility" type="radio" value="Mr." checked />
+        </label>
+        <hr>
+        <label>Ms.
+            <input id="Ms" name="visibility" type="radio" value="Ms." />
+        </label>
+        <hr>
+        <label>Mrs.
+            <input id="Mrs" name="visibility" type="radio" value="Mrs" />
+        </label>
+        <hr>
+        <label>Mx.
+            <input id="Mx" name="visiblity" type="radio" value="Mx" />
+        </label>
+        <hr>
+       <label for="name">
+        Name:* 
+        <input id="Name" name="Name" placeholder="Name" type="text" required />
+       </label>
+       <hr>
+       <label for="Email">
+        Email:*
+        <input id="Email" name="Email" placeholder="Email" type="email" required />
+       </label>
+       <h2>Payment Information</h2>
+       <label for="Card Type"> Choose a card type: </label>
+       <select name="Choose card type" id="Card type" required>
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American Express</option>
+        <option value="discover">Discover</option>
+       </select>
+    </label>
+    <hr>
+    <label for="card number">
+        Card Number:*
+        <input id="Card Number" name="Card Number" type="text" placeholder="xxxx xxxx xxxx xxxx" required />
+    </label>
+    <hr>
+    <label for="Expiration Date"> Expiration Date (MM/YY):*
+        <input type="text" name="Expiration Date" placeholder="mm/yy" id="Expiration Date" required /> 
+    </label>
+    <hr>
+    <input type="Submit" value="Submit Payment">
+    </form>
+</body>
+</html>
